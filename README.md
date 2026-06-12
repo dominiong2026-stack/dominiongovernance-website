@@ -1,54 +1,50 @@
-# Dominion Group Website
+# Dominion Governance Website
 
-This is a Vercel-ready Next.js + Tailwind CSS website for Dominion Group.
+Premium static website for Dominion Governance.
 
-## Recommended deployment path
+## Included
 
-1. Create or log in to GitHub.
-2. Create a new repository, for example: `dominion-group-website`.
-3. Upload these project files to the repository.
-4. Create or log in to Vercel.
-5. Import the GitHub repository into Vercel.
-6. Deploy the project.
-7. Connect the domain: `dominiongovernance.com`.
+- `index.html` — live homepage with premium executive branding, Request Briefing form, and Herman the Chat Bot.
+- `robots.txt` — search engine instructions.
+- `sitemap.xml` — sitemap for `https://dominiongovernance.com/`.
+- `netlify.toml` — Netlify static hosting configuration.
+- `vercel.json` — Vercel static hosting configuration.
 
-## Local development
+## GitHub Pages setup
 
-Install dependencies:
+To publish through GitHub Pages:
 
-```bash
-npm install
-```
+1. Open the repository on GitHub.
+2. Go to **Settings**.
+3. Go to **Pages**.
+4. Under **Build and deployment**, select:
+   - Source: **Deploy from a branch**
+   - Branch: **main**
+   - Folder: **/** root
+5. Save.
+6. GitHub will provide a Pages URL after deployment.
 
-Run development server:
+## Custom domain
 
-```bash
-npm run dev
-```
+If using `dominiongovernance.com`, add it in GitHub Pages Custom Domain settings, then point DNS records to GitHub Pages according to GitHub's instructions.
 
-Build production version:
+## Alternative deployment
 
-```bash
-npm run build
-```
+This site can also be deployed on:
 
-## Main files
+- Netlify
+- Vercel
+- Cloudflare Pages
+- cPanel / traditional hosting
 
-- `app/page.tsx` - main website page
-- `app/layout.tsx` - metadata and app layout
-- `app/globals.css` - Tailwind setup and global styles
-- `tailwind.config.ts` - Tailwind content configuration
-- `package.json` - dependencies and scripts
+## Form note
 
-## Current positioning
+The Request Briefing form currently opens a prepared email to:
 
-Dominion Group provides independent business and AI governance reviews for organizations that need stronger control, clearer accountability, improved efficiency, and decision-ready reporting.
+`advisory@dominiongovernance.com`
 
-Core service lines:
+For production-grade lead capture, connect the form to a secure backend, CRM, or form service.
 
-- Dominion Business & AI Governance Review™
-- Corporate AI Assurance
-- Governance and decision-maker readiness
-- Systems and administration
-- People and change adoption
-- Dominion Institute
+## Herman the Chat Bot
+
+Herman is currently a front-end rule-based chatbot. A future production version should connect to an approved Dominion knowledge base and backend.
