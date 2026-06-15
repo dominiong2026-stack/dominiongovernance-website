@@ -1,38 +1,2088 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dominion | AI Governance, Scale & Executive Diagnostics</title>
-  <meta name="description" content="Dominion helps CEOs, executives, entrepreneurs, boards and growth-serious companies scale revenue, strengthen governance, manage AI risk, and implement controlled AI systems." />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Dominion | AI Governance, Scale & Executive Diagnostics" />
-  <meta property="og:description" content="AI governance, scale, revenue diagnostics, controlled AI implementation, and executive advisory for growth-serious organisations." />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Dominion" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominion Governance | AI-Powered Consultancy. Governance-Led Execution.</title>
+  <meta name="description" content="Dominion is an AI-powered, governance-led consultancy helping organisations build capacity, reduce risk, strengthen governance, improve workforce assurance, and prepare for responsible AI adoption." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--obsidian:#04070d;--midnight:#07111f;--navy:#10243a;--graphite:#111827;--slate:#303947;--steel:#c7cdd5;--platinum:#f2f4f7;--bronze:#8a7156;--white:#fff;--muted:#6b7280;--line:#e5e7eb;--max:1180px;--shadow:0 30px 90px rgba(4,7,13,.22)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--graphite);background:#fff;line-height:1.5}a{text-decoration:none;color:inherit}.topbar{position:sticky;top:0;z-index:50;background:rgba(4,7,13,.96);backdrop-filter:blur(18px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}.nav{max-width:var(--max);margin:0 auto;min-height:76px;display:flex;align-items:center;justify-content:space-between;padding:12px 24px;gap:22px}.brand{display:flex;align-items:center;gap:12px;min-width:230px}.crest{width:38px;height:48px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(199,205,213,.18),rgba(255,255,255,.04));border:1px solid rgba(199,205,213,.7);border-radius:12px 12px 18px 18px;color:var(--steel);font-weight:900}.brand strong{display:block;font-size:22px;letter-spacing:.18em;line-height:1}.brand span{display:block;margin-top:5px;font-size:9px;letter-spacing:.24em;color:rgba(255,255,255,.7);text-transform:uppercase}.nav-links{display:flex;gap:19px;font-size:14px;color:rgba(255,255,255,.82);white-space:nowrap}.nav-links a:hover{color:var(--steel)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:10px;font-weight:850;font-size:14px;border:1px solid transparent;cursor:pointer}.btn:hover{transform:translateY(-1px)}.btn-primary{background:linear-gradient(135deg,#f2f4f7,#c7cdd5 45%,#8a7156);color:#06111f;box-shadow:0 16px 35px rgba(138,113,86,.22)}.btn-outline{border-color:rgba(199,205,213,.72);color:#fff;background:rgba(255,255,255,.03)}.btn-dark{background:var(--midnight);color:#fff}.btn-light{border-color:var(--line);background:#fff;color:var(--graphite)}.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(circle at 80% 18%,rgba(111,143,174,.36),transparent 34%),linear-gradient(90deg,rgba(4,7,13,.99),rgba(7,17,31,.94) 45%,rgba(16,36,58,.72)),linear-gradient(135deg,#04070d,#07111f 48%,#10243a)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 0 20%,rgba(255,255,255,.04) 20% 21%,transparent 21%),radial-gradient(circle at 14% 50%,rgba(199,205,213,.16),transparent 28%)}.hero-inner{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:76px 24px 84px;display:grid;grid-template-columns:minmax(0,660px) 1fr;align-items:center;gap:46px}.eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--steel);font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:900}.eyebrow:before{content:"";width:54px;height:2px;background:var(--bronze)}h1{margin:24px 0 22px;font-size:clamp(42px,6.2vw,74px);line-height:.98;letter-spacing:-.06em}h1 span{color:var(--steel)}.hero p{font-size:19px;color:rgba(255,255,255,.82);max-width:680px;margin:0 0 30px}.hero-actions,.nav-actions,.cta-actions{display:flex;gap:14px;flex-wrap:wrap}.hero-proof{margin-top:38px;display:flex;gap:26px;flex-wrap:wrap;color:rgba(255,255,255,.74);font-size:13px}.hero-proof strong{display:block;color:#fff;font-size:17px}.hero-card{background:rgba(4,7,13,.74);border:1px solid rgba(255,255,255,.13);border-radius:28px;padding:25px;box-shadow:var(--shadow);backdrop-filter:blur(18px);max-width:430px;justify-self:end}.label{color:var(--bronze);text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:900;margin-bottom:12px}.hero-card h3{margin:0 0 10px;font-size:24px;line-height:1.15;color:#fff}.hero-card p{font-size:14px;color:rgba(255,255,255,.74);margin:0 0 20px}.checklist{display:grid;gap:10px;margin:0;padding:0;list-style:none}.checklist li{display:grid;grid-template-columns:22px 1fr;gap:10px;color:rgba(255,255,255,.86);font-size:14px}.check{width:22px;height:22px;border-radius:50%;border:1px solid rgba(199,205,213,.82);color:var(--steel);display:grid;place-items:center;font-size:13px}.sector-strip{background:#fff;border-bottom:1px solid var(--line);box-shadow:0 12px 35px rgba(16,24,40,.05)}.sector-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:160px repeat(5,1fr);padding:0 24px}.sector-title{padding:21px 18px 21px 0;font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:900}.sector{display:flex;align-items:center;gap:12px;padding:19px 18px;border-left:1px solid var(--line);color:var(--slate);font-size:14px;font-weight:650}.icon{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--steel);border-radius:10px;color:var(--navy);font-weight:900;font-size:12px}.section{max-width:var(--max);margin:0 auto;padding:82px 24px}.section-grid{display:grid;grid-template-columns:360px 1fr;gap:46px;align-items:start}h2{margin:0;font-size:clamp(30px,4vw,48px);line-height:1.05;letter-spacing:-.045em;color:var(--graphite)}.lead{color:var(--muted);font-size:18px;margin:18px 0 0;max-width:760px}.dark-feature{background:linear-gradient(145deg,var(--obsidian),var(--navy));color:#fff;border-radius:28px;padding:32px;box-shadow:var(--shadow)}.dark-feature h3{font-size:30px;margin:0 0 12px;color:#fff}.dark-feature p{color:rgba(255,255,255,.76)}.proof-note{background:#f7f8fa;border:1px solid rgba(138,113,86,.28);border-radius:16px;padding:18px;color:#303947;font-size:14px}.services-wrap,.form-wrap{background:linear-gradient(180deg,#f7f8fa,#fff);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}.card{border:1px solid rgba(197,203,211,.72);border-radius:18px;padding:26px;background:#fff;box-shadow:0 1px 0 rgba(16,24,40,.03),0 22px 55px rgba(4,7,13,.06)}.card h3{margin:16px 0 8px;line-height:1.15;font-size:20px;letter-spacing:-.02em}.card p{margin:0;color:var(--muted);font-size:15px}.card ul{margin:16px 0 0;padding-left:18px;color:var(--muted);font-size:14px}.tag{display:inline-flex;border:1px solid rgba(138,113,86,.28);color:#303947;background:rgba(247,248,250,.9);border-radius:100px;padding:5px 10px;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}.framework{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center}.architecture{background:linear-gradient(145deg,#fff,#f7f8fa);border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.pillar-grid{display:grid;gap:14px}.pillar{display:grid;grid-template-columns:46px 1fr;gap:16px;align-items:start;padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}.num{width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:var(--midnight);color:var(--steel);font-weight:900}.pillar h3{margin:0 0 3px;font-size:17px}.pillar p{margin:0;color:var(--muted);font-size:14px}.split-band{background:var(--obsidian);color:#fff;position:relative;overflow:hidden}.split-band:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 15%,rgba(111,143,174,.20),transparent 28%),radial-gradient(circle at 84% 45%,rgba(138,113,86,.14),transparent 28%)}.split-band .section{position:relative;z-index:1}.split-band h2{color:#fff}.split-band .lead{color:rgba(255,255,255,.72)}.dark-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}.dark-card{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);border-radius:18px;padding:24px}.dark-card h3{color:#fff;margin:14px 0 8px}.dark-card p{color:rgba(255,255,255,.68);margin:0}.dark-card a{color:var(--steel);font-weight:800;display:inline-block;margin-top:12px}.form-panel{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:start}.form-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:var(--shadow)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}label{font-weight:800;color:var(--slate);font-size:13px}input,select,textarea{width:100%;border:1px solid var(--steel);border-radius:12px;padding:12px 13px;color:var(--graphite);background:#fff;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--bronze);box-shadow:0 0 0 4px rgba(138,113,86,.12)}textarea{min-height:126px;resize:vertical}.smallprint{color:var(--muted);font-size:12px;margin-top:13px}.message{display:none;margin-top:14px;padding:12px 14px;border-radius:12px;background:#ecfdf3;color:#027a48;font-size:14px;font-weight:700}.cta{max-width:var(--max);margin:0 auto;padding:0 24px 86px}.cta-box{background:linear-gradient(135deg,var(--obsidian),var(--navy));color:#fff;border-radius:34px;padding:46px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;box-shadow:var(--shadow)}.cta h2{color:#fff}.cta p{color:rgba(255,255,255,.72);margin:12px 0 0;font-size:18px}footer{background:#03060b;color:rgba(255,255,255,.72);padding:42px 24px}.footer-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:32px}footer h4{margin:0 0 12px;color:#fff;font-size:14px;letter-spacing:.08em;text-transform:uppercase}footer a{display:block;margin:8px 0;color:rgba(255,255,255,.68);font-size:14px}footer a:hover{color:var(--steel)}.small{color:rgba(255,255,255,.55);font-size:13px;margin-top:18px;max-width:520px}.copyright{max-width:var(--max);margin:32px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.46);font-size:12px}.chat-launcher{position:fixed;right:22px;bottom:22px;z-index:1000;width:64px;height:64px;border-radius:50%;border:1px solid rgba(199,205,213,.75);background:linear-gradient(135deg,#f2f4f7,#c7cdd5 45%,#8a7156);color:#06111f;display:grid;place-items:center;box-shadow:0 22px 48px rgba(4,18,33,.28);cursor:pointer;font-weight:900}.chat{position:fixed;right:22px;bottom:98px;z-index:1000;width:min(410px,calc(100vw - 28px));max-height:min(680px,calc(100vh - 130px));background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 30px 90px rgba(4,18,33,.34);display:none;overflow:hidden}.chat.open{display:grid;grid-template-rows:auto 1fr auto}.chat-header{background:linear-gradient(135deg,var(--obsidian),var(--navy));color:#fff;padding:18px;display:flex;justify-content:space-between;gap:14px}.chat-header h3{margin:0;font-size:17px;color:#fff}.chat-header p{margin:4px 0 0;color:rgba(255,255,255,.68);font-size:12px}.chat-close{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;border-radius:10px;width:34px;height:34px;cursor:pointer;font-size:18px}.chat-body{padding:16px;overflow-y:auto;display:grid;gap:12px;background:linear-gradient(180deg,#f7f8fa,#fff)}.chat-message{max-width:88%;padding:12px 13px;border-radius:16px;font-size:14px;line-height:1.42;white-space:pre-line}.chat-message.bot{justify-self:start;background:#fff;border:1px solid var(--line);color:var(--graphite)}.chat-message.user{justify-self:end;background:var(--midnight);color:#fff}.chat-quick-actions{display:flex;flex-wrap:wrap;gap:8px}.chat-chip{border:1px solid rgba(138,113,86,.34);background:rgba(247,248,250,.9);color:#303947;border-radius:999px;padding:8px 10px;cursor:pointer;font-size:12px;font-weight:800}.chat-form{padding:12px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:8px;background:#fff}.chat-form input{border:1px solid var(--steel);border-radius:14px;padding:12px}.chat-form button{border:0;border-radius:14px;background:var(--midnight);color:#fff;font-weight:900;padding:0 15px;cursor:pointer}.chat-disclaimer{padding:0 12px 12px;color:var(--muted);font-size:11px;background:#fff}@media(max-width:1040px){.nav-links{display:none}.hero-inner,.section-grid,.framework,.form-panel,.cta-box{grid-template-columns:1fr}.hero-card{justify-self:start}.sector-inner{grid-template-columns:repeat(2,1fr)}.sector-title{grid-column:1/-1}.sector{border-left:0;border-top:1px solid var(--line)}.card-grid,.dark-grid{grid-template-columns:repeat(2,1fr)}.footer-inner{grid-template-columns:1fr 1fr}}@media(max-width:720px){.nav{flex-wrap:wrap}.brand strong{font-size:18px}.nav-actions{width:100%}.nav-actions .btn{flex:1}.hero-inner{padding-top:52px;padding-bottom:56px}h1{font-size:44px}.btn{width:100%}.hero-actions{width:100%}.sector-inner,.card-grid,.dark-grid,.footer-inner,.form-grid{grid-template-columns:1fr}.section{padding:58px 20px}.cta{padding:0 20px 58px}.cta-box{padding:30px}.field.full{grid-column:auto}.chat-launcher{right:16px;bottom:16px}.chat{right:14px;bottom:88px}}
+:root {
+  --phi: 1.618;
+  --bg: #030303;
+  --bg-soft: #101010;
+  --surface: rgba(18, 18, 18, 0.86);
+  --surface-strong: #0a0a0a;
+  --surface-light: #ffffff;
+  --surface-muted: #f2f2ef;
+  --text: #ffffff;
+  --text-dark: #111111;
+  --text-muted: #c7c7c7;
+  --line: rgba(255,255,255,0.14);
+  --line-dark: rgba(0,0,0,0.12);
+  --gold: #f5c400;
+  --gold-soft: #d8a900;
+  --gold-pale: #ffe37a;
+  --accent: #f5c400;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  --radius-sm: 14px;
+  --radius: 22px;
+  --radius-lg: 34px;
+  --container: 1220px;
+  --space-1: 0.618rem;
+  --space-2: 1rem;
+  --space-3: 1.618rem;
+  --space-4: 2.618rem;
+  --space-5: 4.236rem;
+  --space-6: 6.854rem;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text-dark);
+  background:
+    radial-gradient(circle at 6% 0%, rgba(245,196,0,0.08), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f4f4f1 100%);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+img, svg { max-width: 100%; display: block; }
+button, input, select, textarea { font: inherit; }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #fff;
+  color: #000;
+  padding: 12px 16px;
+  z-index: 1000;
+}
+.skip-link:focus { left: 12px; top: 12px; }
+
+.container {
+  width: min(calc(100% - 2rem), var(--container));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(16px);
+  background: rgba(3, 3, 3, 0.86);
+  border-bottom: 1px solid rgba(245,196,0,0.18);
+}
+
+.nav-shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 82px;
+  gap: var(--space-3);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.brand-mark {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #0a1218;
+  font-weight: 800;
+  background:
+    radial-gradient(circle at 30% 30%, #f8edc3, #d4af37 60%, #8f6a16 100%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.35), 0 10px 26px rgba(212,175,55,0.24);
+}
+.brand-copy strong {
+  display: block;
+  font-size: 1.02rem;
+  color: #fff;
+  letter-spacing: .04em;
+}
+.brand-copy small {
+  display: block;
+  color: var(--gold-pale);
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  font-size: .68rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.site-nav a {
+  color: rgba(255,255,255,.84);
+  font-size: .95rem;
+}
+.site-nav a:hover { color: #fff; }
+.nav-action {
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(212,175,55,0.22), rgba(212,175,55,0.10));
+  border: 1px solid rgba(212,175,55,.34);
+  color: var(--gold-pale) !important;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+}
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin: 5px auto;
+  background: #fff;
+}
+
+.section {
+  padding: var(--space-6) 0;
+}
+.section-muted { background: linear-gradient(180deg, #f4f4f1 0%, #ffffff 100%); }
+.section-soft { background: linear-gradient(180deg, #ffffff 0%, #f3f3f0 100%); }
+.section-dark {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.hero {
+  position: relative;
+  overflow: clip;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding-top: 7.2rem;
+}
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 18%, rgba(245,196,0,.12), transparent 24%),
+    radial-gradient(circle at 84% 26%, rgba(255,255,255,.08), transparent 22%),
+    linear-gradient(135deg, rgba(255,255,255,.045), transparent 44%),
+    linear-gradient(180deg, #030303 0%, #0c0c0c 70%, #141414 100%);
+}
+.hero-mesh {
+  position: absolute;
+  inset: 0;
+  opacity: .55;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px),
+    radial-gradient(circle at 20% 20%, rgba(212,175,55,.18) 1px, transparent 1.5px),
+    radial-gradient(circle at 70% 40%, rgba(139,184,255,.16) 1px, transparent 1.5px),
+    radial-gradient(circle at 40% 75%, rgba(212,175,55,.14) 1px, transparent 1.5px);
+  background-size: 56px 56px, 56px 56px, 180px 180px, 200px 200px, 220px 220px;
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.9), rgba(0,0,0,.55));
+}
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(30px);
+}
+.glow-one {
+  width: 340px; height: 340px;
+  left: -80px; top: 90px;
+  background: rgba(212,175,55,.12);
+}
+.glow-two {
+  width: 380px; height: 380px;
+  right: -120px; bottom: -80px;
+  background: rgba(123,162,224,.10);
+}
+.hero-spiral {
+  position: absolute;
+  right: clamp(1rem, 6vw, 4rem);
+  top: 8rem;
+  width: min(34vw, 420px);
+  opacity: .9;
+}
+
+.hero-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.618fr 1fr;
+  gap: min(4vw, 3.2rem);
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  color: var(--gold-pale);
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  font-size: .76rem;
+  font-weight: 700;
+}
+.eyebrow.dark { color: #866724; }
+
+h1, h2, h3 {
+  margin: 0 0 1rem;
+  line-height: 1.08;
+}
+
+h1, .hero-panel h2, .section-head h2, .split-intro h2, .ai-layout h2, .outcomes-layout h2, .cost-layout h2, .values-layout h2, .contact-layout h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -.01em;
+}
+
+h1 {
+  font-size: clamp(2.45rem, 4.15vw, 3.85rem);
+  max-width: 13ch;
+  color: #fff;
+  text-wrap: balance;
+}
+
+h2 { font-size: clamp(2rem, 3.3vw, 3.1rem); color: #111b23; }
+h3 { font-size: 1.24rem; color: #111b23; }
+.hero-panel h2, .section-dark h2 { color: #fff; }
+
+.hero-lead {
+  font-size: 1.16rem;
+  max-width: 60ch;
+  color: rgba(255,255,255,.88);
+}
+.hero-text { max-width: 58ch; color: var(--text-muted); }
+
+.hero-actions, .cost-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 1.4rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  font-weight: 600;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary {
+  color: #10161b;
+  background: linear-gradient(180deg, #f2dfad, #d4af37);
+  box-shadow: 0 18px 34px rgba(212,175,55,.18), inset 0 1px 0 rgba(255,255,255,.55);
+}
+.btn-ghost, .btn-outline {
+  color: #fff;
+  background: rgba(255,255,255,.04);
+  border-color: rgba(255,255,255,.16);
+}
+.btn-outline { color: var(--text-dark); border-color: rgba(15,23,42,.14); background: rgba(255,255,255,.55); }
+.btn.full { width: 100%; }
+
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+.trust-strip span,
+.outcome-list span {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .72rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(212,175,55,.22);
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.9);
+  font-size: .92rem;
+}
+.trust-strip span::before,
+.outcome-list span::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f3dfad, #d4af37);
+  box-shadow: 0 0 0 4px rgba(212,175,55,.12);
+}
+
+.hero-panel {
+  position: relative;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03)),
+    rgba(7, 16, 24, 0.62);
+  border: 1px solid rgba(245,196,0,.24);
+  box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,.05);
+  backdrop-filter: blur(18px);
+}
+.panel-topline, .phi-note {
+  color: var(--gold-pale);
+  font-size: .82rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+.phi-note { margin-top: 1rem; opacity: .85; }
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.panel-grid div {
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+}
+.panel-grid strong {
+  display: block;
+  color: var(--gold-pale);
+  font-size: 1.4rem;
+  margin-bottom: .35rem;
+}
+.panel-grid span { color: rgba(255,255,255,.88); }
+.hero-panel p { color: var(--text-muted); }
+
+.split-intro,
+.ai-layout,
+.cost-layout,
+.values-layout,
+.contact-layout {
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 2.4rem;
+  align-items: start;
+}
+.solutions-copy p, .values-layout p, .ai-layout p, .cost-layout p { margin-top: 0; }
+
+.pain-grid,
+.solution-grid,
+.industry-grid,
+.engage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.3rem;
+}
+.industry-grid { grid-template-columns: repeat(3, 1fr); }
+.engage-grid { grid-template-columns: repeat(4, 1fr); }
+
+.pain-grid article,
+.solution-grid article,
+.industry-grid article,
+.engage-grid article,
+.ai-stack div,
+.tab-panel,
+.contact-form,
+.contact-cards a,
+.outcomes-layout,
+.cost-band,
+.values-layout,
+.service-tabs {
+  border-radius: var(--radius);
+}
+
+.pain-grid article,
+.solution-grid article,
+.industry-grid article,
+.engage-grid article {
+  padding: 1.45rem;
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(15,23,42,.07);
+  box-shadow: 0 12px 30px rgba(9, 15, 20, 0.04);
+}
+.pain-grid article span,
+.solution-grid article span,
+.engage-grid article strong {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(212,175,55,.18), rgba(212,175,55,.06));
+  border: 1px solid rgba(212,175,55,.24);
+  color: #8c6d18;
+  margin-bottom: 1rem;
+}
+
+.section-head {
+  max-width: 72rem;
+}
+.section-head h2 { max-width: 22ch; }
+
+.service-tabs {
+  margin-top: 2rem;
+  padding: 1.4rem;
+  background: rgba(255,255,255,.62);
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: 0 16px 34px rgba(10,18,24,.05);
+}
+.tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-bottom: 1.1rem;
+}
+.tab-button {
+  border: 1px solid rgba(15,23,42,.10);
+  background: rgba(255,255,255,.65);
+  color: #25313a;
+  padding: .82rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.tab-button.active {
+  background: linear-gradient(180deg, rgba(212,175,55,.18), rgba(212,175,55,.10));
+  border-color: rgba(212,175,55,.3);
+  color: #6f5311;
+}
+.tab-panel {
+  display: none;
+  padding: 1.35rem;
+  background: linear-gradient(180deg, rgba(255,255,255,.75), rgba(255,255,255,.52));
+  border: 1px solid rgba(15,23,42,.08);
+}
+.tab-panel.active { display: block; }
+.tab-panel ul {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+}
+.tab-panel li { margin-bottom: .35rem; }
+
+.ai-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(245,196,0,.10), transparent 25%),
+    radial-gradient(circle at 82% 24%, rgba(255,255,255,.08), transparent 23%),
+    linear-gradient(180deg, #030303 0%, #111111 100%);
+}
+.ai-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: .4;
+  pointer-events: none;
+}
+.ai-layout,
+.contact-layout { position: relative; z-index: 1; }
+.ai-stack {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.ai-stack div {
+  padding: 1.4rem;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(212,175,55,.16);
+  backdrop-filter: blur(10px);
+}
+.ai-stack span {
+  display: block;
+  color: var(--gold-pale);
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .78rem;
+  margin-bottom: .5rem;
+}
+.ai-stack p { color: rgba(255,255,255,.82); margin: 0; }
+
+.outcomes-layout {
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255,255,255,.72), rgba(245,238,225,.94));
+  border: 1px solid rgba(15,23,42,.07);
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: start;
+}
+.outcome-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .85rem;
+}
+.outcome-list span {
+  color: #25313a;
+  background: rgba(255,255,255,.85);
+  border-color: rgba(15,23,42,.08);
+}
+
+.cost-band {
+  background:
+    radial-gradient(circle at top left, rgba(245,196,0,.08), transparent 28%),
+    linear-gradient(180deg, #ffffff, #f1f1ee);
+  border-top: 1px solid rgba(15,23,42,.06);
+  border-bottom: 1px solid rgba(15,23,42,.06);
+}
+.values-layout {
+  gap: 2rem;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(255,255,255,.72), rgba(244,238,225,.84));
+  border: 1px solid rgba(15,23,42,.07);
+}
+
+.contact-section {
+  position: relative;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(245,196,0,.10), transparent 24%),
+    linear-gradient(180deg, #030303 0%, #111111 100%);
+}
+.contact-layout {
+  gap: 2rem;
+}
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.contact-cards a {
+  padding: 1rem;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(212,175,55,.14);
+}
+.contact-cards span {
+  display: block;
+  color: var(--gold-pale);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .7rem;
+  margin-bottom: .3rem;
+}
+.placeholder-note, .form-note { color: var(--text-muted); font-size: .92rem; }
+.contact-form {
+  padding: 1.5rem;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(12px);
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: rgba(255,255,255,.88);
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  margin-top: .45rem;
+  padding: .95rem 1rem;
+  color: #fff;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 14px;
+}
+.contact-form textarea { resize: vertical; }
+
+.site-footer {
+  background: #030303;
+  color: rgba(255,255,255,.7);
+  border-top: 1px solid rgba(212,175,55,.08);
+}
+
+.footer-disclaimers {
+  padding: 1.4rem 0 0;
+}
+.footer-disclaimers details {
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 18px;
+  background: rgba(255,255,255,.035);
+  overflow: hidden;
+}
+.footer-disclaimers summary {
+  cursor: pointer;
+  list-style: none;
+  padding: .95rem 1.1rem;
+  color: rgba(255,255,255,.84);
+  font-size: .78rem;
+  line-height: 1.45;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.footer-disclaimers summary::-webkit-details-marker { display: none; }
+.footer-disclaimers summary::after {
+  content: '+';
+  float: right;
+  color: var(--gold-pale);
+  font-size: 1rem;
+  line-height: 1;
+}
+.footer-disclaimers details[open] summary::after { content: '–'; }
+.disclaimer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .85rem;
+  padding: 0 1.1rem 1.1rem;
+}
+.disclaimer-grid article {
+  padding: .95rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.07);
+}
+.disclaimer-grid h3 {
+  margin: 0 0 .35rem;
+  color: rgba(255,255,255,.86);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: .76rem;
+  line-height: 1.35;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.disclaimer-grid p {
+  margin: 0;
+  color: rgba(255,255,255,.58);
+  font-size: .74rem;
+  line-height: 1.55;
+}
+
+.footer-layout {
+  min-height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: .92rem;
+}
+
+.floating-cta {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 800;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+.floating-cta a {
+  padding: .86rem 1rem;
+  border-radius: 999px;
+  background: rgba(3,3,3,.94);
+  color: #fff;
+  border: 1px solid rgba(212,175,55,.16);
+  box-shadow: 0 12px 30px rgba(5,11,16,.24);
+  font-size: .9rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1080px) {
+  .disclaimer-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .hero-layout,
+  .split-intro,
+  .ai-layout,
+  .cost-layout,
+  .values-layout,
+  .contact-layout,
+  .outcomes-layout {
+    grid-template-columns: 1fr;
+  }
+  .pain-grid,
+.solution-grid,
+  .engage-grid { grid-template-columns: repeat(2, 1fr); }
+  .industry-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-spiral { opacity: .45; width: 300px; }
+}
+
+@media (max-width: 860px) {
+  .menu-toggle { display: block; }
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 1rem;
+    width: min(300px, calc(100% - 2rem));
+    background: rgba(3,3,3,.97);
+    border: 1px solid rgba(212,175,55,.16);
+    border-radius: 20px;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: var(--shadow);
+    display: none;
+  }
+  .site-nav.open { display: flex; }
+  .contact-cards,
+  .ai-stack,
+  .panel-grid { grid-template-columns: 1fr; }
+  .hero { padding-top: 6rem; }
+}
+
+@media (max-width: 640px) {
+  .disclaimer-grid { grid-template-columns: 1fr; }
+  .footer-disclaimers summary { font-size: .72rem; }
+  .disclaimer-grid p { font-size: .72rem; }
+
+  :root {
+    --space-6: 5rem;
+    --space-5: 3.4rem;
+  }
+  .section { padding: var(--space-5) 0; }
+  h1 { font-size: clamp(2.3rem, 10vw, 3.2rem); }
+  h2 { font-size: clamp(1.72rem, 7vw, 2.4rem); }
+  .pain-grid,
+.solution-grid,
+  .industry-grid,
+  .engage-grid { grid-template-columns: 1fr; }
+  .hero-actions,
+  .cost-actions,
+  
+.footer-disclaimers {
+  padding: 1.4rem 0 0;
+}
+.footer-disclaimers details {
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 18px;
+  background: rgba(255,255,255,.035);
+  overflow: hidden;
+}
+.footer-disclaimers summary {
+  cursor: pointer;
+  list-style: none;
+  padding: .95rem 1.1rem;
+  color: rgba(255,255,255,.84);
+  font-size: .78rem;
+  line-height: 1.45;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.footer-disclaimers summary::-webkit-details-marker { display: none; }
+.footer-disclaimers summary::after {
+  content: '+';
+  float: right;
+  color: var(--gold-pale);
+  font-size: 1rem;
+  line-height: 1;
+}
+.footer-disclaimers details[open] summary::after { content: '–'; }
+.disclaimer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .85rem;
+  padding: 0 1.1rem 1.1rem;
+}
+.disclaimer-grid article {
+  padding: .95rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.07);
+}
+.disclaimer-grid h3 {
+  margin: 0 0 .35rem;
+  color: rgba(255,255,255,.86);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: .76rem;
+  line-height: 1.35;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.disclaimer-grid p {
+  margin: 0;
+  color: rgba(255,255,255,.58);
+  font-size: .74rem;
+  line-height: 1.55;
+}
+
+.footer-layout { flex-direction: column; align-items: stretch; }
+  .floating-cta { right: 12px; left: 12px; bottom: 12px; }
+  .floating-cta a { text-align: center; }
+  .contact-cards { grid-template-columns: 1fr; }
+}
+
+
+/* Visibility and contrast refinements */
+.hero-copy { position: relative; }
+.hero-copy::before {
+  content: '';
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-bottom: 1.25rem;
+  background: var(--gold);
+}
+.section-head::before,
+.split-intro > div:first-child::before,
+.ai-layout > div:first-child::before,
+.cost-layout > div:first-child::before,
+.values-layout > div:first-child::before,
+.contact-layout > div:first-child::before {
+  content: '';
+  display: block;
+  width: 54px;
+  height: 3px;
+  margin-bottom: 1rem;
+  background: var(--gold);
+}
+.contact-form option { color: #111111; background: #ffffff; }
+::selection { background: var(--gold); color: #000; }
+@media (prefers-contrast: more) {
+  .hero-text, .hero-lead, .hero-panel p, .ai-stack p, .placeholder-note, .form-note { color: #ffffff; }
+  .btn-ghost { border-color: #ffffff; }
+}
+
+/* Final premium visibility and AI-consulting refinements */
+:root {
+  --gold: #f0c400;
+  --gold-soft: #c99a00;
+  --gold-pale: #ffe681;
+  --black: #020202;
+  --ink: #111111;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-header {
+  box-shadow: 0 1px 0 rgba(255,255,255,0.04), 0 18px 46px rgba(0,0,0,0.18);
+}
+
+.hero {
+  min-height: 92svh;
+}
+.hero-backdrop {
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.86) 44%, rgba(0,0,0,.70) 100%),
+    radial-gradient(circle at 14% 22%, rgba(240,196,0,.18), transparent 22%),
+    radial-gradient(circle at 88% 18%, rgba(255,255,255,.10), transparent 22%),
+    linear-gradient(180deg, #000 0%, #080808 58%, #141414 100%);
+}
+.hero-mesh {
+  opacity: .42;
+  background-size: 64px 64px, 64px 64px, 180px 180px, 220px 220px, 260px 260px;
+}
+.hero-layout {
+  grid-template-columns: minmax(0, 1.52fr) minmax(340px, 0.94fr);
+}
+.hero-copy {
+  max-width: 780px;
+}
+h1 {
+  font-size: clamp(2.35rem, 3.85vw, 3.65rem);
+  max-width: 15ch;
+  text-shadow: 0 2px 28px rgba(0,0,0,.42);
+}
+.hero-lead {
+  font-size: clamp(1.05rem, 1.35vw, 1.18rem);
+  color: rgba(255,255,255,.93);
+}
+.hero-text { color: rgba(255,255,255,.76); }
+
+.brand-mark,
+.btn-primary {
+  background: linear-gradient(180deg, #ffe681 0%, #f0c400 46%, #b98400 100%);
+}
+.btn-primary {
+  border-color: rgba(255,230,129,.36);
+  box-shadow: 0 16px 28px rgba(240,196,0,.18), inset 0 1px 0 rgba(255,255,255,.6);
+}
+.btn-primary:hover {
+  box-shadow: 0 20px 38px rgba(240,196,0,.24), inset 0 1px 0 rgba(255,255,255,.65);
+}
+.btn-ghost {
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.28);
+  color: #ffffff;
+}
+.nav-action {
+  background: rgba(240,196,0,.12);
+  border-color: rgba(240,196,0,.42);
+}
+
+.hero-panel,
+.contact-form {
+  background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.045));
+  border-color: rgba(240,196,0,.24);
+  box-shadow: 0 26px 70px rgba(0,0,0,.36), inset 0 1px 0 rgba(255,255,255,.08);
+}
+.panel-grid div,
+.ai-stack div,
+.contact-cards a {
+  border-color: rgba(240,196,0,.18);
+}
+.panel-grid div:hover,
+.ai-stack div:hover,
+.contact-cards a:hover,
+.pain-grid article:hover,
+.solution-grid article:hover,
+.industry-grid article:hover,
+.engage-grid article:hover {
+  transform: translateY(-2px);
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+  border-color: rgba(240,196,0,.30);
+  box-shadow: 0 18px 42px rgba(0,0,0,.10);
+}
+
+.section-muted,
+.section-soft {
+  background: #f7f7f4;
+}
+.pain-grid article,
+.solution-grid article,
+.industry-grid article,
+.engage-grid article,
+.service-tabs,
+.values-layout,
+.outcomes-layout {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.10);
+  box-shadow: 0 14px 34px rgba(0,0,0,.055);
+}
+.pain-grid article span,
+.solution-grid article span,
+.engage-grid article strong {
+  background: #111111;
+  color: var(--gold-pale);
+  border-color: rgba(240,196,0,.36);
+}
+.tab-button.active {
+  background: #111111;
+  color: var(--gold-pale);
+  border-color: #111111;
+}
+.tab-panel {
+  background: #ffffff;
+}
+
+.ai-section,
+.contact-section {
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.94), rgba(0,0,0,.82)),
+    radial-gradient(circle at 16% 18%, rgba(240,196,0,.16), transparent 24%),
+    radial-gradient(circle at 84% 12%, rgba(255,255,255,.08), transparent 22%),
+    #050505;
+}
+.ai-section::after,
+.contact-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  opacity: .32;
+}
+.contact-section::after { opacity: .22; }
+.contact-layout { position: relative; z-index: 1; }
+
+.cost-band {
+  background:
+    linear-gradient(90deg, rgba(240,196,0,.12), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f3f3ef 100%);
+}
+.cost-layout {
+  border-top: 1px solid rgba(0,0,0,.12);
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  padding-block: 1.2rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  color: #ffffff;
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.20);
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(240,196,0,.54);
+  border-color: rgba(240,196,0,.54);
+}
+.form-note { color: rgba(255,255,255,.74); }
+
+.floating-cta a:first-child {
+  background: linear-gradient(180deg, #ffe681 0%, #f0c400 55%, #b98400 100%);
+  color: #111111;
+  border-color: rgba(255,230,129,.38);
+}
+.floating-cta a:last-child {
+  background: rgba(0,0,0,.92);
+  border-color: rgba(240,196,0,.32);
+}
+
+@media (max-width: 1080px) {
+  .disclaimer-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .hero-layout { grid-template-columns: 1fr; }
+  .hero-panel { max-width: 720px; }
+}
+@media (max-width: 640px) {
+  .disclaimer-grid { grid-template-columns: 1fr; }
+  .footer-disclaimers summary { font-size: .72rem; }
+  .disclaimer-grid p { font-size: .72rem; }
+
+  .hero { min-height: auto; padding-bottom: 4.5rem; }
+  h1 { font-size: clamp(2.15rem, 9vw, 3rem); max-width: 12ch; }
+  .trust-strip span { width: 100%; justify-content: flex-start; }
+}
+
+/* Who We Are section - credibility for a newer advisory brand */
+.who-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(212,175,55,.08), transparent 28%),
+    linear-gradient(180deg, #fbfaf7 0%, #f3eee5 100%);
+}
+.who-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(8, 16, 24, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 16, 24, .035) 1px, transparent 1px);
+  background-size: 58px 58px;
+  pointer-events: none;
+}
+.who-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+.who-intro h2 {
+  max-width: 18ch;
+}
+.who-intro p {
+  max-width: 68ch;
+}
+.who-card {
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.66));
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: 0 22px 52px rgba(8, 16, 24, .08);
+}
+.who-card-mark {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  color: #0b1014;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f2dfad, #d4af37);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.55), 0 16px 32px rgba(212,175,55,.18);
+}
+.who-principles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+  margin-top: 1.3rem;
+}
+.who-principles span {
+  padding: .62rem .84rem;
+  border-radius: 999px;
+  background: rgba(15,23,42,.045);
+  border: 1px solid rgba(15,23,42,.08);
+  color: #26323b;
+  font-size: .9rem;
+}
+
+@media (max-width: 1080px) {
+  .disclaimer-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .who-layout { grid-template-columns: 1fr; }
+  .who-intro h2 { max-width: 22ch; }
+}
+
+/* Clickable Dominion principle cards */
+.who-principles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .85rem;
+}
+.principle-card {
+  border-radius: 18px;
+  background: rgba(255,255,255,.74);
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: 0 12px 28px rgba(8,16,24,.045);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease;
+  overflow: hidden;
+}
+.principle-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212,175,55,.36);
+  box-shadow: 0 18px 34px rgba(8,16,24,.08);
+}
+.principle-card[open] {
+  background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(250,246,236,.86));
+  border-color: rgba(212,175,55,.42);
+}
+.principle-card summary {
+  cursor: pointer;
+  list-style: none;
+  padding: .92rem 2.4rem .92rem 1rem;
+  position: relative;
+  color: #17212a;
+  font-weight: 700;
+  font-size: .95rem;
+}
+.principle-card summary::-webkit-details-marker { display: none; }
+.principle-card summary::after {
+  content: '+';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #0b1014;
+  background: linear-gradient(180deg, #f2dfad, #d4af37);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.5);
+}
+.principle-card[open] summary::after { content: '−'; }
+.principle-card p {
+  margin: 0;
+  padding: 0 1rem 1rem;
+  color: #43505a;
+  font-size: .92rem;
+  line-height: 1.55;
+}
+@media (max-width: 640px) {
+  .disclaimer-grid { grid-template-columns: 1fr; }
+  .footer-disclaimers summary { font-size: .72rem; }
+  .disclaimer-grid p { font-size: .72rem; }
+
+  .who-principles { grid-template-columns: 1fr; }
+}
+
+/* Dominion Framework and whitepaper section */
+.framework-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(212,175,55,.10), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f4efe6 100%);
+}
+.framework-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(8,16,24,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8,16,24,.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+}
+.framework-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+.framework-copy h2 {
+  max-width: 18ch;
+}
+.framework-copy p {
+  max-width: 68ch;
+}
+.framework-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+.framework-card {
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(12,18,24,.94), rgba(19,26,34,.92)),
+    radial-gradient(circle at top right, rgba(212,175,55,.18), transparent 32%);
+  color: #fff;
+  border: 1px solid rgba(212,175,55,.20);
+  box-shadow: 0 28px 68px rgba(8,16,24,.18);
+}
+.framework-label {
+  display: inline-flex;
+  padding: .5rem .75rem;
+  border-radius: 999px;
+  background: rgba(212,175,55,.12);
+  border: 1px solid rgba(212,175,55,.24);
+  color: #f2dfad;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .72rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.framework-card h3 {
+  color: #fff;
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+  margin-bottom: 1.3rem;
+}
+.framework-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.framework-pillars article {
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+}
+.framework-pillars span {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #10161b;
+  background: linear-gradient(180deg, #f2dfad, #d4af37);
+  font-weight: 800;
+  margin-bottom: .75rem;
+}
+.framework-pillars strong {
+  display: block;
+  color: #fff;
+  margin-bottom: .35rem;
+}
+.framework-pillars p {
+  color: rgba(255,255,255,.76);
+  margin: 0;
+  font-size: .92rem;
+  line-height: 1.5;
+}
+@media (max-width: 1080px) {
+  .disclaimer-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .framework-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .disclaimer-grid { grid-template-columns: 1fr; }
+  .footer-disclaimers summary { font-size: .72rem; }
+  .disclaimer-grid p { font-size: .72rem; }
+
+  .framework-pillars { grid-template-columns: 1fr; }
+  .framework-actions { flex-direction: column; align-items: stretch; }
+}
+
+/* Knowledge Center */
+.knowledge-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(212,175,55,.14), transparent 30%),
+    radial-gradient(circle at 12% 82%, rgba(255,255,255,.06), transparent 28%),
+    linear-gradient(135deg, #050505 0%, #111111 56%, #191919 100%);
+}
+.knowledge-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 58px 58px;
+  pointer-events: none;
+}
+.knowledge-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: .82fr 1.18fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+.knowledge-intro h2 {
+  color: #fff;
+  max-width: 15ch;
+}
+.knowledge-intro p:not(.eyebrow) {
+  color: rgba(255,255,255,.74);
+  max-width: 62ch;
+}
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.knowledge-card {
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.15rem, 2.5vw, 1.55rem);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.065);
+  border: 1px solid rgba(255,255,255,.13);
+  box-shadow: 0 24px 64px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.08);
+}
+.knowledge-card:hover {
+  transform: translateY(-2px);
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+  border-color: rgba(212,175,55,.38);
+  box-shadow: 0 30px 76px rgba(0,0,0,.36), inset 0 1px 0 rgba(255,255,255,.10);
+}
+.knowledge-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1rem;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f2dfad, #d4af37);
+  color: #111111;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
+.knowledge-card h3 {
+  color: #fff;
+  margin-bottom: .65rem;
+}
+.knowledge-card p {
+  color: rgba(255,255,255,.70);
+  margin-bottom: 1.2rem;
+}
+.knowledge-card a {
+  margin-top: auto;
+  color: var(--gold-pale);
+  font-weight: 800;
+}
+.knowledge-card a:hover {
+  color: #ffffff;
+}
+@media (max-width: 1080px) {
+  .knowledge-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
+  .knowledge-grid { grid-template-columns: 1fr; }
+  .knowledge-card { min-height: auto; }
+}
+
+
+/* Markets and upgraded contact layout */
+.markets-section {
+  background:
+    linear-gradient(90deg, rgba(240,196,0,.08), transparent 38%),
+    #f7f7f4;
+}
+.markets-layout {
+  display: grid;
+  grid-template-columns: .78fr 1.22fr;
+  gap: 2rem;
+  align-items: start;
+}
+.markets-layout > div:first-child::before {
+  content: '';
+  display: block;
+  width: 54px;
+  height: 3px;
+  margin-bottom: 1rem;
+  background: var(--gold);
+}
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.market-grid article {
+  min-height: 190px;
+  padding: 1.1rem;
+  border-radius: var(--radius);
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.10);
+  box-shadow: 0 14px 34px rgba(0,0,0,.055);
+}
+.market-grid article:hover {
+  transform: translateY(-2px);
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+  border-color: rgba(240,196,0,.30);
+  box-shadow: 0 18px 42px rgba(0,0,0,.10);
+}
+.market-grid span {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: .85rem;
+  border-radius: 50%;
+  background: #111111;
+  color: var(--gold-pale);
+  border: 1px solid rgba(240,196,0,.36);
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.market-grid strong {
+  display: block;
+  margin-bottom: .45rem;
+  color: #111111;
+  line-height: 1.2;
+}
+.market-grid p { margin: 0; font-size: .92rem; color: #46515a; }
+
+.contact-command-card {
+  margin-top: 1.6rem;
+  padding: 1.15rem;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.045));
+  border: 1px solid rgba(240,196,0,.22);
+  box-shadow: 0 26px 70px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.08);
+}
+.contact-primary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .75rem 1rem;
+  align-items: center;
+  padding: .95rem 1rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+}
+.contact-primary span,
+.contact-action-grid span {
+  color: var(--gold-pale);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: .7rem;
+  font-weight: 700;
+}
+.contact-primary a {
+  color: #ffffff;
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+  font-weight: 700;
+}
+.contact-action-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .85rem;
+  margin-top: .9rem;
+}
+.contact-action-grid a {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  min-height: 132px;
+  padding: 1rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(240,196,0,.18);
+}
+.contact-action-grid a:hover {
+  transform: translateY(-2px);
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+  border-color: rgba(240,196,0,.34);
+  box-shadow: 0 18px 42px rgba(0,0,0,.22);
+}
+.contact-action-grid strong { color: #ffffff; line-height: 1.25; }
+.contact-action-grid small { color: rgba(255,255,255,.68); line-height: 1.35; }
+
+@media (max-width: 1080px) {
+  .disclaimer-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .markets-layout { grid-template-columns: 1fr; }
+  .market-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-action-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .disclaimer-grid { grid-template-columns: 1fr; }
+  .footer-disclaimers summary { font-size: .72rem; }
+  .disclaimer-grid p { font-size: .72rem; }
+
+  .market-grid { grid-template-columns: 1fr; }
+  .contact-action-grid { grid-template-columns: 1fr; }
+  .contact-primary { align-items: flex-start; flex-direction: column; }
+}
+
   </style>
 </head>
 <body>
-<header class="topbar"><nav class="nav"><a class="brand" href="#"><div class="crest">D</div><div><strong>DOMINION</strong><span>AI Backbone Driven Organisation</span></div></a><div class="nav-links"><a href="#about">Who We Are</a><a href="#diagnostic">Diagnostic</a><a href="#services">Services</a><a href="#framework">Frameworks</a><a href="#knowledge">Knowledge Center</a><a href="#briefing-form">Contact</a></div><div class="nav-actions"><a class="btn btn-outline" href="#knowledge">White Papers</a><a class="btn btn-primary" href="#briefing-form">Request Briefing</a></div></nav></header>
-<main>
-<section class="hero"><div class="hero-inner"><div><div class="eyebrow">AI governance, scale and executive diagnostics</div><h1>Power must serve purpose. Scale must protect <span>trust.</span></h1><p>Dominion helps CEOs, executives, entrepreneurs, boards and growth-serious companies scale revenue, strengthen governance, manage AI risk, and implement controlled AI systems for measurable business value.</p><div class="hero-actions"><a class="btn btn-primary" href="#briefing-form">Request a Private Executive Briefing</a><a class="btn btn-outline" href="#diagnostic">Book a Diagnostic</a></div><div class="hero-proof"><div><strong>Revenue discipline</strong> Scale without chaos</div><div><strong>AI reality check</strong> Risk before hype</div><div><strong>Governed implementation</strong> Control before automation</div></div></div><aside class="hero-card"><div class="label">Executive Sales Tool</div><h3>Start with a Scale, Revenue & AI Governance Diagnostic.</h3><p>A direct leadership assessment for companies that need clarity on growth, revenue constraints, AI risk, and governance exposure.</p><ul class="checklist"><li><span class="check">✓</span><span>For companies already using AI that need risk reporting and governance oversight</span></li><li><span class="check">✓</span><span>For companies seeking controlled AI implementation for risk mitigation</span></li><li><span class="check">✓</span><span>For leaders who want ethical AI implementation and measurable value</span></li></ul></aside></div></section>
-<section class="sector-strip"><div class="sector-inner"><div class="sector-title">Built for leadership teams</div><div class="sector"><span class="icon">CEO</span><span>CEOs & Executive Teams</span></div><div class="sector"><span class="icon">AI</span><span>AI-enabled Organisations</span></div><div class="sector"><span class="icon">$</span><span>Revenue Growth Teams</span></div><div class="sector"><span class="icon">⚖</span><span>Risk & Governance Leaders</span></div><div class="sector"><span class="icon">↗</span><span>Large Entrepreneurs</span></div></div></section>
-<section class="section section-grid" id="about"><div><div class="label">Who We Are</div><h2>A values-led strategy, governance, AI and business transformation company.</h2><p class="lead">Dominion helps organisations reduce complexity, strengthen systems, improve accountability, scale revenue, and adopt AI responsibly through executive diagnostics, governance architecture, AI-enabled operating systems, and disciplined execution.</p></div><div class="dark-feature"><div class="label">Positioning</div><h3>AI Governance & Scale Partner for Growth-Serious Companies</h3><p>Dominion is an AI Backbone Driven Organisation. We help leaders convert strategy, governance, operating discipline, risk reporting, and AI enablement into a controlled business growth system.</p><div class="proof-note"><strong>Who we serve:</strong> CEOs, executive teams, business owners, large entrepreneurs, boards, AI adoption leaders, risk leaders, and organisations serious about revenue growth, governance diagnostics, and ethical AI implementation.</div></div></section>
-<section class="services-wrap" id="diagnostic"><div class="section"><div class="label">Signature Diagnostic</div><h2>Scale, Revenue & AI Governance Diagnostic.</h2><p class="lead">A direct reality check for leadership teams that need to know whether the business is structurally ready to scale, where revenue is being constrained, where AI can create measurable value, and where governance risk is being ignored.</p><div class="card-grid"><article class="card"><div class="icon">↗</div><h3>Scale and revenue readiness</h3><p>Review growth constraints, reporting visibility, operating rhythm, accountability gaps, execution capacity, and revenue bottlenecks.</p></article><article class="card"><div class="icon">AI</div><h3>AI reality check</h3><p>Assess current AI use, AI opportunities, AI risk exposure, staff usage patterns, automation maturity, and practical implementation readiness.</p></article><article class="card"><div class="icon">⚖</div><h3>Governance diagnostics</h3><p>Identify control gaps, decision-rights issues, risk reporting weaknesses, policy needs, and ethical AI implementation requirements.</p></article></div></div></section>
-<section class="section" id="services"><div class="label">Services</div><h2>Advisory, diagnostics, governance and controlled AI implementation.</h2><p class="lead">Dominion is built as an executive sales and delivery platform. Each service leads toward a diagnostic, briefing, or implementation engagement.</p><div class="card-grid"><article class="card"><span class="tag">Governance</span><div class="icon">⚖</div><h3>AI Risk Management & Reporting</h3><p>For organisations already using AI that now need structured oversight, risk registers, policy controls, executive reporting, and governance dashboards.</p></article><article class="card"><span class="tag">Implementation</span><div class="icon">▣</div><h3>Controlled AI Implementation</h3><p>For companies that want AI-enabled workflows implemented with risk mitigation, controls, ethical standards, and measurable value.</p></article><article class="card"><span class="tag">Ethical AI</span><div class="icon">◇</div><h3>Ethical AI Implementation</h3><p>Support for leaders who want AI adoption aligned with accountability, trust, privacy, human judgment, and responsible decision-making.</p></article><article class="card"><span class="tag">Scale</span><div class="icon">$</div><h3>Revenue & Scale Advisory</h3><p>Strategy, operating rhythm, accountability, reporting, systems, and execution discipline for companies serious about growth.</p></article><article class="card"><span class="tag">Executive</span><div class="icon">CEO</div><h3>Private Briefings</h3><p>Confidential briefings for CEOs, executives, boards, entrepreneurs, and leadership teams on AI, governance, risk, scale, and revenue.</p></article><article class="card"><span class="tag">Development</span><div class="icon">✦</div><h3>Coaching & Mentoring</h3><p>Executive coaching and mentoring for leaders moving from reactive management to strategic command in AI-enabled business environments.</p></article></div></section>
-<section class="section framework" id="framework"><div><div class="label">Proprietary Frameworks</div><h2>Frameworks that turn AI ambition into governed execution.</h2><p class="lead">Dominion’s frameworks support executive diagnosis, AI risk management, controlled implementation, ethical AI adoption, and growth discipline.</p><div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-dark" href="#briefing-form">Request Framework Brief</a><a class="btn btn-light" href="#knowledge">View White Papers</a></div></div><div class="architecture"><div class="pillar-grid"><article class="pillar"><div class="num">01</div><div><h3>Dominion Scale, Revenue & AI Governance Diagnostic</h3><p>Reality-check assessment across scale readiness, revenue constraints, AI risk, governance gaps, and execution capacity.</p></div></article><article class="pillar"><div class="num">02</div><div><h3>AI Backbone Operating Model</h3><p>A business operating model that uses AI as controlled infrastructure, not scattered tools.</p></div></article><article class="pillar"><div class="num">03</div><div><h3>AI Risk Reporting Framework</h3><p>Structured reporting for organisations already using AI and needing governance visibility.</p></div></article><article class="pillar"><div class="num">04</div><div><h3>Controlled AI Implementation Framework</h3><p>Practical deployment pathway for ethical AI implementation, risk mitigation, workflow design, and human oversight.</p></div></article><article class="pillar"><div class="num">05</div><div><h3>Executive Governance & Accountability Framework</h3><p>Decision rights, escalation, ownership, controls, leadership reporting, and disciplined execution.</p></div></article></div></div></section>
-<section class="split-band" id="knowledge"><div class="section"><div class="label">Knowledge Center</div><h2>White Papers, Conferences, Coaching and Mentoring.</h2><p class="lead">A sales-oriented knowledge hub that supports executive credibility, lead capture, event conversion, and thought leadership.</p><div class="dark-grid"><article class="dark-card"><div class="icon">WP</div><h3>White Papers</h3><p>Downloadable executive papers on AI governance, risk reporting, ethical AI implementation, AI backbone operating models, and controlled AI deployment.</p><a href="#briefing-form">Request a white paper →</a></article><article class="dark-card"><div class="icon">🎤</div><h3>Conference</h3><p>Executive sessions, board briefings, and conference content on AI risk, governance diagnostics, and responsible AI-enabled growth.</p><a href="#briefing-form">Discuss a conference engagement →</a></article><article class="dark-card"><div class="icon">CM</div><h3>Coaching & Mentoring</h3><p>Leadership support for CEOs, executives, and entrepreneurs who want strategic command, governance clarity, and AI-era execution discipline.</p><a href="#briefing-form">Request coaching information →</a></article></div></div></section>
-<section class="form-wrap" id="briefing-form"><div class="section form-panel"><div><div class="label">Request Briefing</div><h2>Tell us what you need to scale, govern, or control.</h2><p class="lead">Use this form to request a private executive briefing, diagnostic, white paper, conference discussion, coaching, mentoring, or controlled AI implementation consultation. Only your name and email are required.</p><div class="proof-note" style="margin-top:22px"><strong>Delivery note:</strong> this static version opens a prepared email to <strong>advisory@dominiongovernance.com</strong>. For production, connect this form to a secure backend, CRM, or form service.</div></div><form class="form-card" id="briefingRequestForm"><div class="form-grid"><div class="field"><label for="name">Full name *</label><input id="name" name="name" required placeholder="Your name"></div><div class="field"><label for="email">Email *</label><input id="email" type="email" name="email" required placeholder="name@company.com"></div><div class="field"><label for="preferredCommunication">Preferred method of communication</label><select id="preferredCommunication" name="preferredCommunication"><option value="">Select preference</option><option>Email</option><option>Phone call</option><option>WhatsApp</option><option>Video meeting</option><option>No preference</option></select></div><div class="field"><label for="heardAbout">How did you hear about us?</label><select id="heardAbout" name="heardAbout"><option value="">Select one</option><option>Referral</option><option>LinkedIn</option><option>Google / search engine</option><option>Conference or event</option><option>White paper / publication</option><option>Social media</option><option>Existing relationship</option><option>Other</option></select></div><div class="field"><label for="role">Role / title</label><input id="role" name="role" placeholder="CEO, Executive, Director..."></div><div class="field"><label for="company">Company</label><input id="company" name="company" placeholder="Company name"></div><div class="field"><label for="phone">Phone</label><input id="phone" name="phone" placeholder="+1 ..."></div><div class="field"><label for="interest">Primary interest</label><select id="interest" name="interest"><option value="">Select one</option><option>Private Executive Briefing</option><option>Scale, Revenue & AI Governance Diagnostic</option><option>AI Risk Management & Reporting</option><option>Controlled AI Implementation</option><option>Ethical AI Implementation</option><option>White Papers</option><option>Conference Engagement</option><option>Coaching & Mentoring</option></select></div><div class="field full"><label for="message">What should Dominion know?</label><textarea id="message" name="message" placeholder="Briefly describe your growth, revenue, AI, governance, risk, or implementation issue."></textarea></div></div><button class="btn btn-dark" type="submit" style="margin-top:18px">Send Request to Dominion</button><div class="message" id="formMessage">Your email client should open with a prepared request addressed to advisory@dominiongovernance.com.</div><p class="smallprint">By submitting, you agree to be contacted by Dominion regarding your request. Do not include highly confidential information in this prototype form.</p></form></div></section>
-<section class="cta"><div class="cta-box"><div><h2>Scale revenue without chaos. Adopt AI without illusion.</h2><p>Begin with a private briefing or diagnostic built for executive decision-making.</p></div><div class="cta-actions"><a class="btn btn-primary" href="#briefing-form">Request Briefing</a><a class="btn btn-outline" href="#diagnostic">View Diagnostic</a></div></div></section>
-</main>
-<footer><div class="footer-inner"><div><a class="brand" href="#"><div class="crest">D</div><div><strong>DOMINION</strong><span>AI Backbone Driven Organisation</span></div></a><p class="small">Dominion helps CEOs, executives, entrepreneurs, boards and growth-serious companies scale revenue, strengthen governance, manage AI risk, and implement controlled AI systems for measurable business value.</p></div><div><h4>Services</h4><a href="#diagnostic">Scale, Revenue & AI Governance Diagnostic</a><a href="#services">AI Risk Management & Reporting</a><a href="#services">Controlled AI Implementation</a></div><div><h4>Frameworks</h4><a href="#framework">AI Backbone Operating Model</a><a href="#framework">AI Risk Reporting Framework</a><a href="#framework">Controlled AI Implementation Framework</a></div><div><h4>Knowledge Center</h4><a href="#knowledge">White Papers</a><a href="#knowledge">Conference</a><a href="#knowledge">Coaching & Mentoring</a><a href="#briefing-form">Request Briefing</a></div></div><div class="copyright">© 2026 The Dominion Group / Dominion Governance. All rights reserved. Dominion frameworks, diagnostic methods, AI governance architecture, AI Backbone Operating Model, Scale, Revenue & AI Governance Diagnostic, AI Risk Reporting Framework, Controlled AI Implementation Framework, and related materials are proprietary to Dominion unless otherwise stated. No part of this website, framework content, diagnostic structure, copy, or methodology may be reproduced, distributed, copied, modified, or used for commercial purposes without written permission from Dominion.</div></footer>
-<button class="chat-launcher" id="chatLauncher" aria-label="Open Herman the Chat Bot" title="Chat with Herman the Chat Bot">H</button><aside class="chat" id="chat"><div class="chat-header"><div><h3>Herman the Chat Bot</h3><p>Dominion’s courteous appointment and executive enquiry assistant.</p></div><button class="chat-close" id="chatClose">×</button></div><div class="chat-body" id="chatBody"><div class="chat-message bot">Good day. I’m Herman the Chat Bot, Dominion’s appointment and executive enquiry assistant. May I assist you in scheduling a private briefing or diagnostic appointment with Dominion? I can also answer questions about our company, services, AI governance, controlled AI implementation, white papers, conference enquiries, coaching, and mentoring.</div><div class="chat-quick-actions"><button class="chat-chip" data-question="Can you assist me in scheduling an appointment?">Schedule appointment</button><button class="chat-chip" data-question="What does Dominion do?">What Dominion does</button><button class="chat-chip" data-question="What is the Scale, Revenue and AI Governance Diagnostic?">Diagnostic</button><button class="chat-chip" data-question="Do you help organisations already using AI manage risk?">AI risk reporting</button></div></div><form class="chat-form" id="chatForm"><input id="chatInput" type="text" placeholder="Ask Herman..." autocomplete="off"><button type="submit">Send</button></form><div class="chat-disclaimer">Herman the Chat Bot is a courteous prototype assistant. For confidential or formal enquiries, please use the briefing form.</div></aside>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Dominion Governance home">
+        <span class="brand-mark">D</span>
+        <span class="brand-copy">
+          <strong>Dominion</strong>
+          <small>Governance</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#solutions">Solutions</a>
+        <a href="#who-we-are">Who We Are</a>
+        <a href="#framework">Framework</a>
+        <a href="#knowledge">Knowledge Center</a>
+        <a href="#services">Services</a>
+        <a href="#ai-model">AI Model</a>
+        <a href="#industries">Industries</a>
+        <a href="#markets">Markets</a>
+        <a href="#engage">Engage</a>
+        <a href="#contact" class="nav-action">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero section-dark">
+      <div class="hero-backdrop">
+        <div class="hero-mesh"></div>
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+        <div class="hero-spiral" aria-hidden="true">
+          <svg viewBox="0 0 420 420" role="presentation">
+            <g fill="none" stroke="rgba(212,175,55,.18)" stroke-width="1.2">
+              <rect x="0" y="0" width="420" height="420"></rect>
+              <rect x="160.4" y="0" width="259.6" height="160.4"></rect>
+              <rect x="160.4" y="160.4" width="160.4" height="99.2"></rect>
+              <rect x="259.6" y="160.4" width="60.8" height="60.8"></rect>
+              <rect x="259.6" y="221.2" width="37.6" height="23.2"></rect>
+              <rect x="283.0" y="221.2" width="14.2" height="14.2"></rect>
+            </g>
+            <path d="M0,420 C0,188 188,0 420,0" stroke="rgba(212,175,55,.42)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <path d="M160.4,259.6 C160.4,171 231.4,100 320,100" stroke="rgba(212,175,55,.36)" stroke-width="2" fill="none"/>
+            <path d="M259.6,221.2 C259.6,187.6 286.8,160.4 320.4,160.4" stroke="rgba(212,175,55,.30)" stroke-width="1.8" fill="none"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI-powered consultancy. Governance-led execution.</p>
+          <h1>Build capacity. Reduce risk. Capitalize on AI.</h1>
+          <p class="hero-lead">Dominion helps organisations strengthen governance, improve workforce assurance, modernise operations, and prepare for responsible AI adoption.</p>
+          <p class="hero-text">We work with boards, executives, business owners, SMEs, regulated businesses, and operational companies that need practical, defensible, and implementation-ready solutions.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Request a Consultation</a>
+            <a href="#cost" class="btn btn-ghost">Request a Cost Estimate</a>
+          </div>
+          <div class="trust-strip" aria-label="Dominion service pillars">
+            <span>Governance</span>
+            <span>Risk</span>
+            <span>Workforce Assurance</span>
+            <span>AI Readiness</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Dominion operating model">
+          <div class="panel-topline">Dominion Model</div>
+          <h2>AI-enabled speed. Human-led judgment.</h2>
+          <div class="panel-grid">
+            <div><strong>01</strong><span>Audit and control reviews</span></div>
+            <div><strong>02</strong><span>Sharper reporting and analysis</span></div>
+            <div><strong>03</strong><span>Governed AI adoption</span></div>
+            <div><strong>04</strong><span>Implementation-ready systems</span></div>
+          </div>
+          <p>AI strengthens our delivery engine. Governance protects quality, confidentiality, accountability, and professional discipline.</p>
+          <div class="phi-note">Built on proportion, clarity, and disciplined structure.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="solutions" class="section solutions-section">
+      <div class="container split-intro">
+        <div class="reveal">
+          <p class="eyebrow dark">Solutions for stronger organisations</p>
+          <h2>Helping organisations move forward with clarity, control, and responsible AI readiness.</h2>
+        </div>
+        <div class="solutions-copy reveal">
+          <p>Many companies want to use AI, improve performance, and modernise operations. Dominion helps put the governance, policies, controls, skills, and internal capacity in place to support safe, responsible, and practical progress.</p>
+          <p>We support organisations that want clearer accountability, updated policies, stronger compliance readiness, better workforce systems, improved operational efficiency, and more confident decision-making.</p>
+          <p><strong>Dominion helps create that foundation</strong> by moving organisations toward structured, auditable, and practical systems that support better decisions, stronger controls, and responsible growth.</p>
+        </div>
+      </div>
+
+      <div class="container solution-grid reveal">
+        <article><span>01</span><h3>Responsible AI readiness</h3><p>Leaders can pursue AI value with practical policies, controls, training, and oversight.</p></article>
+        <article><span>02</span><h3>Stronger governance</h3><p>Decision-making, accountability, reporting, and compliance structures become clearer and more reliable.</p></article>
+        <article><span>03</span><h3>Operational discipline</h3><p>Processes become better documented, more consistent, and less dependent on individual knowledge.</p></article>
+        <article><span>04</span><h3>Workforce assurance</h3><p>Manuals, roles, discipline, reporting lines, and people systems become aligned with operational needs.</p></article>
+      </div>
+    </section>
+    <section id="who-we-are" class="section who-section">
+      <div class="container who-layout reveal">
+        <div class="who-intro">
+          <p class="eyebrow dark">Who we are</p>
+          <h2>Dominion is built for leaders who need control, clarity, and responsible AI readiness.</h2>
+          <p>Dominion Governance is an AI-powered, governance-led consultancy created to help organisations strengthen the systems behind performance: governance, workforce assurance, operational control, risk discipline, and responsible AI adoption.</p>
+          <p>Dominion is guided by a disciplined service ethic: to help clients strengthen their organisations with integrity, confidentiality, courage, and responsible innovation.</p>
+          <p>We are designed for boards, executives, business owners, and management teams that need practical advisory support without losing confidentiality, accountability, or professional judgment.</p>
+        </div>
+        <div class="who-card">
+          <div class="who-card-mark">D</div>
+          <h3>A modern advisory firm with a disciplined governance core.</h3>
+          <p>Dominion combines structured consulting methods with AI-enabled analysis and reporting. This allows us to work with greater speed and depth while keeping the work human-led, risk-aware, and implementation-focused.</p>
+          <div class="who-principles" aria-label="Dominion principles">
+            <details class="principle-card">
+              <summary>Responsible innovation</summary>
+              <p>We help clients explore AI and modern tools in a controlled way, connecting innovation to practical value, clear oversight, and responsible adoption.</p>
+            </details>
+            <details class="principle-card">
+              <summary>Governance discipline</summary>
+              <p>We bring structure to decision-making, accountability, controls, reporting, and implementation so organisations can grow with confidence and clarity.</p>
+            </details>
+            <details class="principle-card">
+              <summary>Professional integrity</summary>
+              <p>Our work is grounded in careful analysis, honest advice, expert review, and practical recommendations that leaders can defend and act on.</p>
+            </details>
+            <details class="principle-card">
+              <summary>Client confidentiality</summary>
+              <p>We treat client information with discretion and care, protecting sensitive business, workforce, operational, and strategic information throughout every engagement.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="framework" class="section framework-section">
+      <div class="container framework-layout reveal">
+        <div class="framework-copy">
+          <p class="eyebrow dark">Dominion Framework</p>
+          <h2>Our framework is the primary pathway into Dominion.</h2>
+          <p>The Dominion Framework brings governance discipline, workforce assurance, operational control, risk awareness, and responsible AI readiness into one practical advisory model.</p>
+          <p>It is informed by practical experience across Fortune 500 environments, ISO-aligned systems, change management, governance execution, and C-Suite advisory contexts.</p>
+          <p>We understand the support that C-Suite leaders, executives, boards, owners, and management teams need: clear analysis, confidential judgment, practical implementation, and systems that can withstand scrutiny.</p>
+          <p><strong>The intended client journey is simple:</strong> start with the Dominion Framework, move through an executive diagnostic or briefing, then proceed into a defined advisory engagement or implementation roadmap.</p>
+          <div class="framework-actions">
+            <a href="#contact" class="btn btn-primary">Request the Whitepaper</a>
+            <a href="#engage" class="btn btn-outline">Discuss the Framework</a>
+          </div>
+        </div>
+        <div class="framework-card" aria-label="Dominion Framework pillars">
+          <div class="framework-label">Whitepaper Focus</div>
+          <h3>From insight to implementation</h3>
+          <div class="framework-pillars">
+            <article><span>01</span><strong>Governance</strong><p>Decision rights, accountability, reporting, oversight, and control structures.</p></article>
+            <article><span>02</span><strong>Workforce Assurance</strong><p>Policies, roles, manuals, conduct systems, and people-management controls.</p></article>
+            <article><span>03</span><strong>Operational Control</strong><p>Procedures, registers, templates, supervision systems, and implementation discipline.</p></article>
+            <article><span>04</span><strong>Responsible AI Readiness</strong><p>AI opportunities, risks, policies, oversight, adoption controls, and value pathways.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pathway" class="section pathway-section section-muted">
+      <div class="container section-head reveal">
+        <p class="eyebrow dark">Recommended pathway</p>
+        <h2>Framework first. Diagnostic next. Advisory engagement after that.</h2>
+        <p>This makes the website easier for serious prospects to understand. Dominion is not presented as a menu of disconnected services. The services sit behind a disciplined framework and a clear executive entry point.</p>
+      </div>
+      <div class="container engage-grid reveal">
+        <article><strong>01</strong><h3>Dominion Framework</h3><p>Use the framework to define the leadership issue, governance exposure, operational need, workforce concern, or AI-readiness question.</p></article>
+        <article><strong>02</strong><h3>Executive Diagnostic</h3><p>Complete a focused review or briefing to identify priorities, risks, controls, capabilities, and practical next steps.</p></article>
+        <article><strong>03</strong><h3>Advisory Engagement</h3><p>Move into project-based advisory, retained support, board advisory, coaching, or implementation planning based on need.</p></article>
+        <article><strong>04</strong><h3>Implementation Roadmap</h3><p>Translate findings into policies, controls, reporting, workforce systems, AI-readiness actions, and management routines.</p></article>
+      </div>
+    </section>
+
+
+    <section id="knowledge" class="section knowledge-section section-dark">
+      <div class="container knowledge-layout reveal">
+        <div class="knowledge-intro">
+          <p class="eyebrow">Knowledge Center</p>
+          <h2>White Papers, Conferences, Coaching and Mentoring.</h2>
+          <p>A focused knowledge hub that supports executive credibility, board-level conversation, lead capture, event conversion, and thought leadership around governance, AI readiness, operational control, and responsible execution.</p>
+          <p>The flagship knowledge pathway is the Dominion Framework executive brief, available on request for serious leadership, board, and advisory conversations.</p>
+        </div>
+
+        <div class="knowledge-grid" aria-label="Dominion Knowledge Center services">
+          <article class="knowledge-card">
+            <span class="knowledge-icon">WP</span>
+            <h3>White Papers</h3>
+            <p>Downloadable executive papers and request-access briefs on the Dominion Framework, AI governance, risk reporting, ethical AI implementation, AI backbone operating models, and controlled AI deployment.</p>
+            <a href="#contact">Request a white paper →</a>
+          </article>
+
+          <article class="knowledge-card">
+            <span class="knowledge-icon">🎤</span>
+            <h3>Conference</h3>
+            <p>Executive sessions, board briefings, and conference content on AI risk, governance diagnostics, and responsible AI-enabled growth.</p>
+            <a href="#contact">Discuss a conference engagement →</a>
+          </article>
+
+          <article class="knowledge-card">
+            <span class="knowledge-icon">CM</span>
+            <h3>Coaching &amp; Mentoring</h3>
+            <p>Leadership support for CEOs, executives, entrepreneurs, and management teams who want strategic command, governance clarity, and AI-era execution discipline.</p>
+            <a href="#contact">Request coaching information →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="services" class="section section-muted">
+      <div class="container section-head reveal">
+        <p class="eyebrow dark">How we help</p>
+        <h2>Services organised around the Dominion Framework.</h2>
+        <p>Dominion’s services are not a disconnected menu. They are structured around the framework, beginning with diagnosis and moving into advisory, board support, coaching, implementation, or retained support as required.</p>
+      </div>
+
+      <div class="container service-tabs reveal">
+        <div class="tab-list" role="tablist" aria-label="Dominion services">
+          <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab="diagnostic">Framework Diagnostic</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="governance">Governance</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="workforce">Workforce</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="operations">Operations</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="ai">AI Readiness</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="audit">Audit</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="executive">Executive</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="coaching">Coaching &amp; Mentoring</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="board">Board Advisory Partner</button>
+        </div>
+
+        <div class="tab-panel active" data-panel="diagnostic">
+          <h3>Dominion Framework Diagnostic</h3>
+          <p>A focused executive review that uses the Dominion Framework to assess governance discipline, workforce assurance, operational control, risk visibility, and responsible AI readiness before a wider advisory engagement is scoped.</p>
+          <ul><li>Executive issue framing</li><li>Governance and control review</li><li>Priority-risk summary</li><li>Advisory or implementation roadmap</li></ul>
+        </div>
+        <div class="tab-panel" data-panel="governance">
+          <h3>Governance and Risk Advisory</h3>
+          <p>We assess governance structures, accountability, decision-making, compliance exposure, and internal controls. We help leadership teams clarify authority, strengthen control points, and improve governance discipline.</p>
+          <ul><li>Governance reviews</li><li>Risk and control diagnostics</li><li>Compliance gap assessments</li><li>Accountability and authority mapping</li></ul>
+        </div>
+        <div class="tab-panel" data-panel="workforce">
+          <h3>Workforce Assurance</h3>
+          <p>We review and strengthen HR manuals, employee handbooks, job descriptions, disciplinary systems, workforce policies, reporting lines, and management controls.</p>
+          <ul><li>Employee manuals</li><li>Role clarity and job architecture</li><li>Disciplinary and grievance frameworks</li><li>Workforce control audits</li></ul>
+        </div>
+        <div class="tab-panel" data-panel="operations">
+          <h3>Operational Control</h3>
+          <p>We help organisations document, monitor, and improve the systems that govern daily operations, supervision, reporting, compliance, and execution.</p>
+          <ul><li>Operating procedures</li><li>Registers and checklists</li><li>Reporting templates</li><li>Control frameworks and roadmaps</li></ul>
+        </div>
+        <div class="tab-panel" data-panel="ai">
+          <h3>AI Readiness and Responsible AI</h3>
+          <p>We help leaders identify where AI can create value, what risks must be controlled, and what policies, training, governance structures, and oversight mechanisms are needed before adoption.</p>
+          <ul><li>AI readiness assessments</li><li>Responsible AI policies</li><li>AI use-case mapping</li><li>Training and adoption controls</li></ul>
+        </div>
+        <div class="tab-panel" data-panel="audit">
+          <h3>Internal Audit and Reporting</h3>
+          <p>We use AI-enabled methods to support faster audit reviews, sharper findings, clearer reports, and more responsive management recommendations.</p>
+          <ul><li>Audit planning</li><li>Findings registers</li><li>Management reports</li><li>Remediation tracking</li></ul>
+        </div>
+        <div class="tab-panel" data-panel="executive">
+          <h3>Executive Advisory and Implementation</h3>
+          <p>We support boards, owners, executives, and management teams with practical advice, decision support, action planning, and retained advisory services.</p>
+          <ul><li>Executive briefings</li><li>Implementation roadmaps</li><li>Retained advisory</li><li>Decision support</li></ul>
+        </div>
+        <div class="tab-panel" data-panel="coaching">
+          <h3>Executive Coaching and Mentoring</h3>
+          <p>We provide confidential leadership support for CEOs, executives, entrepreneurs, and senior managers who need sharper strategic command, governance clarity, decision discipline, and AI-era execution confidence.</p>
+          <ul><li>Executive coaching sessions</li><li>Leadership mentoring</li><li>Decision and accountability support</li><li>AI-era execution discipline</li></ul>
+        </div>
+        <div class="tab-panel" data-panel="board">
+          <h3>Board Advisory Partner</h3>
+          <p>We act as an independent advisory partner to boards, directors, owners, and executive committees that need structured governance insight, risk visibility, management challenge, and implementation-focused support.</p>
+          <ul><li>Board and committee briefings</li><li>Governance and risk advisory</li><li>Management challenge and decision support</li><li>Responsible AI and transformation oversight</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="ai-model" class="section section-dark ai-section">
+      <div class="container ai-layout">
+        <div class="reveal">
+          <p class="eyebrow">Our AI-powered advantage</p>
+          <h2>Faster, sharper, more responsive consulting — governed by professional judgment.</h2>
+          <p>Dominion uses AI across its consulting backbone to improve speed, consistency, responsiveness, and analytical depth. AI improves how we work. Governance ensures the work remains responsible, professional, and defensible.</p>
+        </div>
+        <div class="ai-stack reveal">
+          <div><span>Speed</span><p>Complete reviews, reports, and analysis faster.</p></div>
+          <div><span>Depth</span><p>Identify patterns, priorities, and control improvement opportunities more efficiently.</p></div>
+          <div><span>Cost-efficiency</span><p>Reduce delivery friction and improve responsiveness.</p></div>
+          <div><span>Control</span><p>Maintain expert oversight, confidentiality, and accountability.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="industries" class="section">
+      <div class="container section-head reveal">
+        <p class="eyebrow dark">Who we help</p>
+        <h2>Built for leaders seeking stronger systems, greater confidence, and practical AI readiness.</h2>
+      </div>
+      <div class="container industry-grid reveal">
+        <article><h3>Boards and executive teams</h3><p>Governance, risk, decision support, and AI readiness.</p></article>
+        <article><h3>SMEs and growth companies</h3><p>Formal systems, practical controls, and scalable operating discipline.</p></article>
+        <article><h3>Energy and oilfield services</h3><p>Operational controls, workforce assurance, HSSE-linked systems, and audit readiness.</p></article>
+        <article><h3>Marine, logistics, and field operations</h3><p>Role clarity, reporting discipline, compliance, and operational execution controls.</p></article>
+        <article><h3>Financial and regulated businesses</h3><p>Governance, compliance, risk controls, AML/CFT readiness, and AI policy support.</p></article>
+        <article><h3>Professional, healthcare, and public-sector bodies</h3><p>Process improvement, confidentiality-aware AI adoption, and management control.</p></article>
+      </div>
+    </section>
+
+
+    <section id="markets" class="section section-muted markets-section">
+      <div class="container markets-layout reveal">
+        <div>
+          <p class="eyebrow dark">Markets we serve</p>
+          <h2>Regional and international support for executive teams operating across key markets.</h2>
+          <p>Dominion supports organisations, boards, executives, owners, and management teams seeking governance-led advisory, operational control, workforce assurance, and responsible AI readiness across selected markets.</p>
+        </div>
+        <div class="market-grid" aria-label="Dominion service markets">
+          <article><span>UK</span><strong>United Kingdom</strong><p>Executive advisory, AI readiness, governance discipline, and operating-model support.</p></article>
+          <article><span>TT</span><strong>Trinidad and Tobago</strong><p>Governance, workforce assurance, operational control, and compliance readiness.</p></article>
+          <article><span>GY</span><strong>Guyana</strong><p>Growth, project controls, local capacity, supplier readiness, and executive support.</p></article>
+          <article><span>JM</span><strong>Jamaica</strong><p>Business formalisation, controls, workforce systems, and responsible AI adoption.</p></article>
+          <article><span>BB</span><strong>Barbados</strong><p>Governance, compliance, tourism/service operations, and resilient business systems.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="outcomes" class="section section-soft">
+      <div class="container outcomes-layout reveal">
+        <div>
+          <p class="eyebrow dark">Client outcomes</p>
+          <h2>Systems clients can use, monitor, improve, and rely on.</h2>
+        </div>
+        <div class="outcome-list">
+          <span>Clearer governance and accountability</span>
+          <span>Stronger internal controls</span>
+          <span>Improved audit and compliance readiness</span>
+          <span>Better workforce systems</span>
+          <span>Practical AI adoption plans</span>
+          <span>Stronger operational discipline</span>
+          <span>Improved reporting and decision support</span>
+          <span>Reduced business and implementation risk</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="engage" class="section">
+      <div class="container section-head reveal">
+        <p class="eyebrow dark">How engagements work</p>
+        <h2>Flexible support based on risk, urgency, and business need.</h2>
+      </div>
+      <div class="container engage-grid reveal">
+        <article><strong>01</strong><h3>Dominion Framework Diagnostic</h3><p>Focused review of governance, risk, workforce, operations, or AI readiness using the Dominion Framework, resulting in findings, risk summary, and implementation roadmap.</p></article>
+        <article><strong>02</strong><h3>Project-Based Advisory</h3><p>Defined support for policies, manuals, governance redesign, control improvement, AI readiness, or implementation planning.</p></article>
+        <article><strong>03</strong><h3>Retained Advisory Support</h3><p>Monthly advisory support for leadership teams needing continuous governance, risk, workforce, compliance, operations, or AI-readiness guidance.</p></article>
+        <article><strong>04</strong><h3>Executive Briefings and Workshops</h3><p>Focused sessions for boards, executives, owners, and management teams on AI readiness, governance, risk, operational control, and workforce assurance.</p></article>
+      </div>
+    </section>
+
+    <section id="cost" class="section cost-band">
+      <div class="container cost-layout reveal">
+        <div>
+          <p class="eyebrow dark">Cost and proposal enquiries</p>
+          <h2>Request a tailored cost estimate.</h2>
+          <p>Dominion’s fees are based on organisation size, issue complexity, urgency, and required deliverables. We offer diagnostic reviews, project-based engagements, executive briefings, retained advisory support, and implementation support.</p>
+        </div>
+        <div class="cost-actions">
+          <a href="#contact" class="btn btn-primary">Request Cost Estimate</a>
+          <a href="mailto:advisory@dominiongovernance.com?subject=Cost%20Estimate%20Request" class="btn btn-outline">Email for Pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="values" class="section section-muted">
+      <div class="container values-layout reveal">
+        <div>
+          <p class="eyebrow dark">Why Dominion</p>
+          <h2>Professional. Confidential. Practical. Risk-aware. AI-enabled. Governance-led.</h2>
+        </div>
+        <div>
+          <p>Dominion combines AI-powered delivery with governance-led execution. Our approach brings together practical advisory, risk awareness, workforce assurance, operational control, and responsible AI readiness.</p>
+          <p>We help organisations build capacity, reduce risk, and capitalize on AI without losing control, accountability, or professional discipline.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-dark contact-section">
+      <div class="container contact-layout">
+        <div class="reveal">
+          <p class="eyebrow">Contact Dominion</p>
+          <h2>Ready to strengthen governance, reduce risk, or prepare for AI?</h2>
+          <p>Contact Dominion to request a confidential consultation, proposal, whitepaper, or cost estimate. Use the form to send your enquiry directly to advisory@dominiongovernance.com, or reach us by website, email, phone, or WhatsApp.</p>
+          <div class="contact-command-card">
+            <div class="contact-primary">
+              <span>Direct advisory email</span>
+              <a href="mailto:advisory@dominiongovernance.com">advisory@dominiongovernance.com</a>
+            </div>
+            <div class="contact-action-grid">
+              <a href="https://www.dominiongovernance.com"><span>Website</span><strong>www.dominiongovernance.com</strong><small>Official Dominion web address</small></a>
+              <a href="tel:+18680000000"><span>Phone</span><strong>+1 (868) 000-0000</strong><small>Placeholder — replace before public launch</small></a>
+              <a href="https://wa.me/18680000000"><span>WhatsApp</span><strong>Message Dominion</strong><small>Placeholder — replace before public launch</small></a>
+              <a href="#markets"><span>Markets</span><strong>UK · T&T · Guyana · Jamaica · Barbados</strong><small>Selected advisory coverage</small></a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" action="https://formsubmit.co/advisory@dominiongovernance.com" method="POST">
+          <input type="hidden" name="_subject" value="Dominion Website Enquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting Dominion Governance. We have received your enquiry and will review it directly." />
+          <label>Full name<input type="text" name="name" autocomplete="name" required /></label>
+          <label>Organisation<input type="text" name="organisation" autocomplete="organization" /></label>
+          <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+          <label>Service interest
+            <select name="interest">
+              <option>Dominion Framework Diagnostic</option>
+              <option>Governance and risk advisory</option>
+              <option>AI readiness and responsible AI</option>
+              <option>Workforce assurance</option>
+              <option>Operational control</option>
+              <option>Internal audit and reporting</option>
+              <option>Dominion Framework / Whitepaper</option>
+              <option>White Papers / Knowledge Center</option>
+              <option>Conference Engagement</option>
+              <option>Coaching and Mentoring</option>
+              <option>Board Advisory Partner</option>
+              <option>Cost estimate / proposal</option>
+            </select>
+          </label>
+          <label>Market / location
+            <select name="market">
+              <option>United Kingdom</option>
+              <option>Trinidad and Tobago</option>
+              <option>Guyana</option>
+              <option>Jamaica</option>
+              <option>Barbados</option>
+              <option>Other / regional enquiry</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="5" placeholder="Briefly describe your need."></textarea></label>
+          <button class="btn btn-primary full" type="submit">Send Enquiry to Dominion</button>
+          <p class="form-note">Your enquiry is sent directly to advisory@dominiongovernance.com. Dominion treats submitted information as confidential business correspondence.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-disclaimers" aria-label="Website disclaimers">
+      <details>
+        <summary>Important information and disclaimers</summary>
+        <div class="disclaimer-grid">
+          <article>
+            <h3>General information</h3>
+            <p>The information on this website is provided for general business information only. It does not create a client relationship, professional engagement, or duty of care until Dominion has formally accepted an engagement in writing.</p>
+          </article>
+          <article>
+            <h3>Advisory scope</h3>
+            <p>Dominion provides governance, workforce assurance, operational control, risk, AI-readiness, and executive advisory support. Website content should not be treated as legal, tax, financial, investment, audit-opinion, or regulatory advice.</p>
+          </article>
+          <article>
+            <h3>AI and professional judgment</h3>
+            <p>Where AI-enabled methods are used, they support analysis, drafting, review, and delivery efficiency. AI does not replace professional judgment, expert review, confidentiality, accountability, or client-specific assessment.</p>
+          </article>
+          <article>
+            <h3>Confidentiality and submissions</h3>
+            <p>Dominion treats enquiries as confidential business correspondence. Please do not submit highly sensitive, privileged, or regulated information through the website form unless appropriate protections and engagement terms are in place.</p>
+          </article>
+          <article>
+            <h3>Markets and availability</h3>
+            <p>Dominion serves clients across the United Kingdom, Trinidad and Tobago, Guyana, Jamaica, Barbados, and selected regional or international enquiries. Service availability may depend on scope, jurisdiction, regulation, and required expertise.</p>
+          </article>
+          <article>
+            <h3>Whitepapers and framework material</h3>
+            <p>Dominion Framework and whitepaper materials are provided for strategic insight, research, and professional discussion. Dominion encourages informed conversation around the framework and its application to governance, workforce assurance, operational control, responsible AI readiness, and executive decision support.</p>
+            <p>Any reference to the Dominion Framework should be properly attributed. The framework, related materials, and advisory methods remain the intellectual property of Dominion Governance and may not be copied, reproduced, modified, distributed, or used commercially without written permission.</p>
+          </article>
+        </div>
+      </details>
+    </div>
+    <div class="container footer-layout">
+      <p>© <span data-year></span> Dominion Governance. All rights reserved.</p>
+      <p>AI-powered consultancy. Governance-led execution.</p>
+    </div>
+  </footer>
+
+  <div class="floating-cta" aria-label="Quick contact options">
+    <a href="#contact">Consultation</a>
+    <a href="#cost">Cost Estimate</a>
+  </div>
 <script>
-const form=document.getElementById('briefingRequestForm'),msg=document.getElementById('formMessage');form.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(form),fields=[['Full name',d.get('name')],['Email',d.get('email')],['Preferred method of communication',d.get('preferredCommunication')],['How did they hear about Dominion',d.get('heardAbout')],['Role / title',d.get('role')],['Company',d.get('company')],['Phone',d.get('phone')],['Primary interest',d.get('interest')],['Message',d.get('message')]];const body=fields.map(([l,v])=>`${l}: ${v||'Not provided'}`).join('\n');location.href=`mailto:advisory@dominiongovernance.com?subject=${encodeURIComponent('Dominion briefing request — '+(d.get('company')||'New prospect'))}&body=${encodeURIComponent('A new Dominion website request was submitted.\n\n'+body)}`;msg.style.display='block'});
-const launcher=document.getElementById('chatLauncher'),panel=document.getElementById('chat'),closeBtn=document.getElementById('chatClose'),body=document.getElementById('chatBody'),chatForm=document.getElementById('chatForm'),input=document.getElementById('chatInput');const answers=[{k:['appointment','schedule','meeting','book','consultation','call'],a:'Certainly. I can assist you in scheduling an appointment with Dominion. Please use the Request Briefing form. Only your name and email are required. You may also include your preferred method of communication, how you heard about Dominion, company name, role, timeline, and the issue you would like Dominion to review.'},{k:['what does dominion do','what do you do','company','who are you'],a:'Dominion is a values-led strategy, governance, AI, and business transformation company. We help CEOs, executives, entrepreneurs, boards, and growth-serious organisations scale revenue, strengthen governance, manage AI risk, and implement controlled AI systems.'},{k:['diagnostic','scale revenue','governance diagnostic','reality check'],a:'The Scale, Revenue & AI Governance Diagnostic is Dominion’s entry-point executive assessment. It reviews scale readiness, revenue constraints, AI opportunities, AI risk, governance gaps, reporting visibility, and execution discipline. Would you like to request a diagnostic appointment?'},{k:['already using ai','risk reporting','ai risk','risk register','governance reporting'],a:'Yes. Dominion supports organisations that have already enabled AI and now need to manage, monitor, and report AI risk. This may include AI risk registers, governance dashboards, executive reporting, policy controls, use-case classification, and board-ready risk visibility.'},{k:['controlled ai','implementation','risk mitigation','deploy ai'],a:'Controlled AI Implementation means deploying AI with clear purpose, measurable business value, governance controls, risk mitigation, human oversight, and ethical standards. Dominion helps organisations move from scattered tools to controlled AI-enabled business infrastructure.'},{k:['ethical ai','responsible ai','ethics','trust','accountability'],a:'Dominion supports ethical AI implementation by focusing on accountability, trust, privacy, transparency, human judgment, governance controls, and responsible adoption.'},{k:['white paper','knowledge center','conference','coaching','mentoring'],a:'The Knowledge Center supports White Papers, Conference engagements, Coaching, and Mentoring. Use the Request Briefing form and choose the relevant interest.'},{k:['framework','frameworks','copyright'],a:'Dominion’s proprietary frameworks include the Scale, Revenue & AI Governance Diagnostic, AI Backbone Operating Model, AI Risk Reporting Framework, Controlled AI Implementation Framework, and Executive Governance & Accountability Framework.'}];function add(t,s){const m=document.createElement('div');m.className='chat-message '+s;m.textContent=t;body.appendChild(m);body.scrollTop=body.scrollHeight}function answer(q){q=q.toLowerCase();const hit=answers.find(x=>x.k.some(k=>q.includes(k)));return hit?hit.a:'Thank you. I may not have a complete answer to that question in this prototype. I can assist with appointment scheduling, Dominion’s diagnostics, AI governance, risk reporting, controlled AI implementation, ethical AI, the Knowledge Center, white papers, conference engagements, coaching, mentoring, and private briefings. For a specific executive enquiry, please use the Request Briefing form.'}launcher.onclick=()=>{panel.classList.toggle('open');if(panel.classList.contains('open'))input.focus()};closeBtn.onclick=()=>panel.classList.remove('open');body.onclick=e=>{if(e.target.matches('.chat-chip')){const q=e.target.dataset.question;add(q,'user');setTimeout(()=>add(answer(q),'bot'),220)}};chatForm.onsubmit=e=>{e.preventDefault();const q=input.value.trim();if(!q)return;add(q,'user');input.value='';setTimeout(()=>add(answer(q),'bot'),220)};
+const header = document.querySelector('[data-header]');
+const menuToggle = document.querySelector('[data-menu-toggle]');
+const nav = document.querySelector('[data-nav]');
+const tabs = document.querySelectorAll('[data-tab]');
+const panels = document.querySelectorAll('[data-panel]');
+const reveals = document.querySelectorAll('.reveal');
+
+if (menuToggle && nav) {
+  menuToggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+if (tabs.length) {
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.dataset.tab;
+      tabs.forEach(btn => {
+        btn.classList.toggle('active', btn === tab);
+        btn.setAttribute('aria-selected', String(btn === tab));
+      });
+      panels.forEach(panel => {
+        panel.classList.toggle('active', panel.dataset.panel === target);
+      });
+    });
+  });
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+reveals.forEach(item => observer.observe(item));
+
+window.addEventListener('scroll', () => {
+  if (!header) return;
+  header.style.background = window.scrollY > 20
+    ? 'rgba(3, 3, 3, 0.92)'
+    : 'rgba(3, 3, 3, 0.86)';
+});
+
+document.querySelector('[data-year]')?.append(new Date().getFullYear());
+
 </script>
 </body>
 </html>
