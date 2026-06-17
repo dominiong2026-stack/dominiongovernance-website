@@ -10,6 +10,51 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
 [[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/white-papers"
+  to = "/white-papers.html"
+  status = 200
+
+[[redirects]]
+  from = "/white-papers/ai-governance-readiness"
+  to = "/white-papers/ai-governance-readiness.html"
+  status = 200
+
+[[redirects]]
+  from = "/white-papers/ai-risk-board-reporting"
+  to = "/white-papers/ai-risk-board-reporting.html"
+  status = 200
+
+[[redirects]]
+  from = "/white-papers/controlled-ai-adoption"
+  to = "/white-papers/controlled-ai-adoption.html"
+  status = 200
+
+[[redirects]]
+  from = "/events"
+  to = "/events.html"
+  status = 200
+
+[[redirects]]
+  from = "/events/executive-ai-readiness-session"
+  to = "/events/executive-ai-readiness-session.html"
+  status = 200
+
+[[redirects]]
+  from = "/events/ai-governance-value-diagnostic-briefing"
+  to = "/events/ai-governance-value-diagnostic-briefing.html"
+  status = 200
+
+[[redirects]]
+  from = "/events/board-and-corporate-briefings"
+  to = "/events/board-and-corporate-briefings.html"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
