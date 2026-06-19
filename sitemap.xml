@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://dominiongovernance.com/</loc><lastmod>2026-06-17</lastmod><priority>1.0</priority></url>
-  <url><loc>https://dominiongovernance.com/contact</loc><lastmod>2026-06-17</lastmod><priority>0.8</priority></url>
-  <url><loc>https://dominiongovernance.com/white-papers</loc><lastmod>2026-06-17</lastmod><priority>0.8</priority></url>
-  <url><loc>https://dominiongovernance.com/white-papers/ai-governance-readiness</loc><lastmod>2026-06-17</lastmod><priority>0.7</priority></url>
-  <url><loc>https://dominiongovernance.com/white-papers/ai-risk-board-reporting</loc><lastmod>2026-06-17</lastmod><priority>0.7</priority></url>
-  <url><loc>https://dominiongovernance.com/white-papers/controlled-ai-adoption</loc><lastmod>2026-06-17</lastmod><priority>0.7</priority></url>
-  <url><loc>https://dominiongovernance.com/events</loc><lastmod>2026-06-17</lastmod><priority>0.8</priority></url>
-  <url><loc>https://dominiongovernance.com/events/executive-ai-readiness-session</loc><lastmod>2026-06-17</lastmod><priority>0.7</priority></url>
-  <url><loc>https://dominiongovernance.com/events/ai-governance-value-diagnostic-briefing</loc><lastmod>2026-06-17</lastmod><priority>0.7</priority></url>
-  <url><loc>https://dominiongovernance.com/events/board-and-corporate-briefings</loc><lastmod>2026-06-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.dominiongovernance.com/</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.dominiongovernance.com/request/</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.dominiongovernance.com/contact/</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
