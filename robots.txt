@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://dominiongovernance.com/sitemap.xml
+Sitemap: https://www.dominiongovernance.com/sitemap.xml
