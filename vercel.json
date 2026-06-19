@@ -13,14 +13,9 @@
     }
   ],
   "rewrites": [
-    { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/white-papers", "destination": "/white-papers.html" },
-    { "source": "/white-papers/ai-governance-readiness", "destination": "/white-papers/ai-governance-readiness.html" },
-    { "source": "/white-papers/ai-risk-board-reporting", "destination": "/white-papers/ai-risk-board-reporting.html" },
-    { "source": "/white-papers/controlled-ai-adoption", "destination": "/white-papers/controlled-ai-adoption.html" },
-    { "source": "/events", "destination": "/events.html" },
-    { "source": "/events/executive-ai-readiness-session", "destination": "/events/executive-ai-readiness-session.html" },
-    { "source": "/events/ai-governance-value-diagnostic-briefing", "destination": "/events/ai-governance-value-diagnostic-briefing.html" },
-    { "source": "/events/board-and-corporate-briefings", "destination": "/events/board-and-corporate-briefings.html" }
+    { "source": "/frameworks", "destination": "/trust-centre/index.html" },
+    { "source": "/frameworks/(.*)", "destination": "/trust-centre/index.html" },
+    { "source": "/privacy", "destination": "/trust-centre/index.html" },
+    { "source": "/terms", "destination": "/trust-centre/index.html" }
   ]
 }
