@@ -13,9 +13,9 @@
     }
   ],
   "rewrites": [
-    { "source": "/frameworks", "destination": "/trust-centre/index.html" },
-    { "source": "/frameworks/(.*)", "destination": "/trust-centre/index.html" },
-    { "source": "/privacy", "destination": "/trust-centre/index.html" },
-    { "source": "/terms", "destination": "/trust-centre/index.html" }
+    { "source": "/frameworks", "destination": "/frameworks.html" },
+    { "source": "/privacy", "destination": "/trust-centre/privacy-notice/index.html" },
+    { "source": "/terms", "destination": "/trust-centre/terms-of-use/index.html" },
+    { "source": "/cookies", "destination": "/cookies.html" }
   ]
 }
