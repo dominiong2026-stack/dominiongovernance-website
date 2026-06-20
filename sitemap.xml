@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.dominiongovernance.com/</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.dominiongovernance.com/request/</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.dominiongovernance.com/contact/</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.dominiongovernance.com/</loc></url>
+  <url><loc>https://www.dominiongovernance.com/request/</loc></url>
+  <url><loc>https://www.dominiongovernance.com/contact/</loc></url>
+  <url><loc>https://www.dominiongovernance.com/services/</loc></url>
+  <url><loc>https://www.dominiongovernance.com/who-we-help/</loc></url>
+  <url><loc>https://www.dominiongovernance.com/markets/</loc></url>
+  <url><loc>https://www.dominiongovernance.com/resources/</loc></url>
+  <url><loc>https://www.dominiongovernance.com/trust-centre/</loc></url>
+  <url><loc>https://www.dominiongovernance.com/about/</loc></url>
+  <url><loc>https://www.dominiongovernance.com/executive-ai-governance-checklist.html</loc></url>
+  <url><loc>https://www.dominiongovernance.com/board-ai-oversight-questions.html</loc></url>
+  <url><loc>https://www.dominiongovernance.com/ai-exposure-self-assessment.html</loc></url>
 </urlset>
