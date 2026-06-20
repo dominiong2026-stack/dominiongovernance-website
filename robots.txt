@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 Sitemap: https://www.dominiongovernance.com/sitemap.xml
 Sitemap: https://www.dominiongovernance.com/sitemap-services.xml
+Sitemap: https://www.dominiongovernance.com/sitemap-markets.xml
+Sitemap: https://www.dominiongovernance.com/sitemap-audiences.xml
+Sitemap: https://www.dominiongovernance.com/sitemap-trust-resources.xml
