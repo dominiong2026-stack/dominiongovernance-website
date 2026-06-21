@@ -1,6 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/frameworks/", "destination": "/frameworks", "permanent": false }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -14,7 +17,7 @@
   ],
   "rewrites": [
     { "source": "/frameworks", "destination": "/frameworks.html" },
-    { "source": "/frameworks/", "destination": "/frameworks/index.html" },
+    { "source": "/frameworks/", "destination": "/frameworks.html" },
     { "source": "/privacy", "destination": "/trust-centre/privacy-notice/index.html" },
     { "source": "/terms", "destination": "/trust-centre/terms-of-use/index.html" },
     { "source": "/cookies", "destination": "/trust-centre/cookies-notice/index.html" },
