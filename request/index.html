@@ -7,7 +7,8 @@
   <meta name="description" content="Request a confidential AI governance, risk and enterprise-readiness discussion with Dominion Governance.">
   <link rel="canonical" href="https://www.dominiongovernance.com/request/">
   <meta name="robots" content="index,follow">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta name="dg-form-version" content="email-primary-2026-06-22">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=email-primary-20260622">
 </head>
 <body>
 <main class="request-hero">
@@ -22,7 +23,7 @@
       <p class="eyebrow">Secure intake</p>
       <h2 style="color:#071A2D">Start your request</h2>
       <p>Share high-level context only. Do not submit highly confidential material, client files, passwords, sensitive datasets or legal documents in this initial form.</p>
-      <form id="governance-request-form" action="/api/request-review" method="post" novalidate>
+      <form id="governance-request-form" action="mailto:advisory@dominiongovernance.com" method="post" novalidate>
         <div class="form-row"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Full name"></div>
         <div class="form-row"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="name@organisation.com"></div>
         <div class="form-row"><label for="organisation">Organisation</label><input id="organisation" name="organisation" type="text" autocomplete="organization" required placeholder="Organisation name"></div>
@@ -30,11 +31,10 @@
         <div class="form-row"><label for="market">Country or market</label><select id="market" name="market" required><option value="">Select one</option><option>Trinidad and Tobago</option><option>Guyana</option><option>Wider Caribbean</option><option>International-facing organisation</option><option>Other</option></select></div>
         <div class="form-row"><label for="primary_concern">Primary reason for enquiry</label><select id="primary_concern" name="primary_concern" required><option value="">Select one</option><option>AI governance / risk exposure</option><option>Board briefing</option><option>Policy and acceptable use</option><option>Documentation and evidence readiness</option><option>Market-access readiness</option><option>Ongoing governance support</option><option>Other</option></select></div>
         <div class="form-row"><label for="message">What should Dominion know before responding? <span>Optional</span></label><textarea id="message" name="message" rows="5" placeholder="Brief context, concern or preferred next step..."></textarea></div>
-        <div class="form-row" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
         <div class="form-row"><label style="display:flex;gap:10px;align-items:flex-start;font-weight:700"><input name="consent" type="checkbox" value="yes" required style="width:auto;margin-top:4px"> <span>I confirm this is a high-level enquiry and does not include highly confidential material.</span></label></div>
-        <button class="button button-dark" type="submit">Submit request</button>
-        <p class="form-note" id="form-status" role="status" aria-live="polite">You may also email <a href="mailto:advisory@dominiongovernance.com">advisory@dominiongovernance.com</a> directly.</p>
-        <p class="form-note" id="email-fallback" hidden></p>
+        <button class="button button-dark" type="submit">Prepare email request</button>
+        <p class="form-note" id="form-status" role="status" aria-live="polite">This form prepares an email to <a href="mailto:advisory@dominiongovernance.com">advisory@dominiongovernance.com</a>. Direct website delivery will be enabled after the email sender is configured.</p>
+        <p class="form-note" id="email-fallback"></p>
       </form>
     </div>
   </div>
@@ -69,60 +69,25 @@
     ].join('\n');
   }
 
-  function showEmailFallback(payload, message) {
+  function buildMailto(payload) {
     const subject = 'Dominion Governance discussion request - ' + (payload.organisation || payload.name || 'Website enquiry');
-    const href = 'mailto:advisory@dominiongovernance.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(buildEmailBody(payload));
-    status.textContent = message || 'The website form could not send the request automatically.';
-    if (fallback) {
-      fallback.hidden = false;
-      fallback.innerHTML = '<a class="button button-dark" href="' + href + '">Email this request instead</a><br><span>Your details remain on this page. Use this fallback if the submit button does not complete.</span>';
-    }
+    return 'mailto:advisory@dominiongovernance.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(buildEmailBody(payload));
   }
 
-  form.addEventListener('submit', async function(event){
+  form.addEventListener('submit', function(event){
     event.preventDefault();
-    if (fallback) {
-      fallback.hidden = true;
-      fallback.innerHTML = '';
-    }
     if (!form.checkValidity()) {
-      status.textContent = 'Please complete the required fields before submitting.';
+      status.textContent = 'Please complete the required fields before preparing the email.';
       form.reportValidity();
       return;
     }
-
-    const button = form.querySelector('button[type="submit"]');
-    const originalText = button.textContent;
     const payload = formDataObject();
-    button.disabled = true;
-    button.textContent = 'Sending...';
-    status.textContent = 'Sending your request...';
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-
-      const rawText = await response.text();
-      let result = {};
-      try { result = rawText ? JSON.parse(rawText) : {}; } catch (parseError) { result = {}; }
-
-      if (!response.ok || !result.ok) {
-        const serverMessage = result.message || (response.status === 404 ? 'The website email endpoint is not available yet.' : 'The website form could not send the request automatically.');
-        showEmailFallback(payload, serverMessage);
-        return;
-      }
-
-      form.reset();
-      status.textContent = result.message || 'Thank you. Your request has been sent to Dominion Governance.';
-    } catch (error) {
-      showEmailFallback(payload, 'The website form could not send the request automatically.');
-    } finally {
-      button.disabled = false;
-      button.textContent = originalText;
+    const href = buildMailto(payload);
+    status.textContent = 'Your email client should open with the request pre-filled. Send the email to complete the enquiry.';
+    if (fallback) {
+      fallback.innerHTML = '<a class="button button-dark" href="' + href + '">Open email request</a><br><span>If your email app did not open automatically, use this button.</span>';
     }
+    window.location.href = href;
   });
 })();
 </script>
