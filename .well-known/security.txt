@@ -1,0 +1,4 @@
+Contact: mailto:advisory@dominiongovernance.com
+Preferred-Languages: en
+Canonical: https://www.dominiongovernance.com/.well-known/security.txt
+Policy: https://www.dominiongovernance.com/trust-centre/confidentiality-document-handling/
