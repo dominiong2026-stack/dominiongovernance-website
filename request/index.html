@@ -34,6 +34,7 @@
         <div class="form-row"><label style="display:flex;gap:10px;align-items:flex-start;font-weight:700"><input name="consent" type="checkbox" value="yes" required style="width:auto;margin-top:4px"> <span>I confirm this is a high-level enquiry and does not include highly confidential material.</span></label></div>
         <button class="button button-dark" type="submit">Submit request</button>
         <p class="form-note" id="form-status" role="status" aria-live="polite">You may also email <a href="mailto:advisory@dominiongovernance.com">advisory@dominiongovernance.com</a> directly.</p>
+        <p class="form-note" id="email-fallback" hidden></p>
       </form>
     </div>
   </div>
@@ -43,32 +44,81 @@
 (function(){
   const form = document.getElementById('governance-request-form');
   const status = document.getElementById('form-status');
+  const fallback = document.getElementById('email-fallback');
   if (!form || !status) return;
+
+  function formDataObject() {
+    return Object.fromEntries(new FormData(form).entries());
+  }
+
+  function buildEmailBody(payload) {
+    return [
+      'Dominion Governance discussion request',
+      '',
+      'Full name: ' + (payload.name || ''),
+      'Work email: ' + (payload.email || ''),
+      'Organisation: ' + (payload.organisation || ''),
+      'Role: ' + (payload.role || ''),
+      'Country or market: ' + (payload.market || ''),
+      'Primary reason: ' + (payload.primary_concern || ''),
+      '',
+      'Message:',
+      payload.message || 'No additional message provided.',
+      '',
+      'Confirmation: This is a high-level enquiry and does not include highly confidential material.'
+    ].join('\n');
+  }
+
+  function showEmailFallback(payload, message) {
+    const subject = 'Dominion Governance discussion request - ' + (payload.organisation || payload.name || 'Website enquiry');
+    const href = 'mailto:advisory@dominiongovernance.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(buildEmailBody(payload));
+    status.textContent = message || 'The website form could not send the request automatically.';
+    if (fallback) {
+      fallback.hidden = false;
+      fallback.innerHTML = '<a class="button button-dark" href="' + href + '">Email this request instead</a><br><span>Your details remain on this page. Use this fallback if the submit button does not complete.</span>';
+    }
+  }
+
   form.addEventListener('submit', async function(event){
     event.preventDefault();
+    if (fallback) {
+      fallback.hidden = true;
+      fallback.innerHTML = '';
+    }
     if (!form.checkValidity()) {
       status.textContent = 'Please complete the required fields before submitting.';
       form.reportValidity();
       return;
     }
+
     const button = form.querySelector('button[type="submit"]');
     const originalText = button.textContent;
+    const payload = formDataObject();
     button.disabled = true;
     button.textContent = 'Sending...';
     status.textContent = 'Sending your request...';
-    const payload = Object.fromEntries(new FormData(form).entries());
+
     try {
       const response = await fetch(form.action, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       });
-      const result = await response.json().catch(function(){ return {}; });
-      if (!response.ok || !result.ok) throw new Error(result.message || 'Submission failed.');
+
+      const rawText = await response.text();
+      let result = {};
+      try { result = rawText ? JSON.parse(rawText) : {}; } catch (parseError) { result = {}; }
+
+      if (!response.ok || !result.ok) {
+        const serverMessage = result.message || (response.status === 404 ? 'The website email endpoint is not available yet.' : 'The website form could not send the request automatically.');
+        showEmailFallback(payload, serverMessage);
+        return;
+      }
+
       form.reset();
       status.textContent = result.message || 'Thank you. Your request has been sent to Dominion Governance.';
     } catch (error) {
-      status.textContent = error.message || 'The request could not be sent. Please email advisory@dominiongovernance.com directly.';
+      showEmailFallback(payload, 'The website form could not send the request automatically.');
     } finally {
       button.disabled = false;
       button.textContent = originalText;
