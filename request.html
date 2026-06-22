@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Request | Dominion Governance</title>
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<main class="request-hero">
+<div class="container request-grid">
+<div>
+<p class="eyebrow">Request</p>
+<h1>Request a discussion.</h1>
+<p class="hero-lead">Submit your enquiry directly from this website.</p>
+</div>
+<div class="request-form">
+<h2 style="color:#071A2D">Start your request</h2>
+<form action="/api/request-review" method="post">
+<div class="form-row"><label>Full name<input name="name" type="text" required></label></div>
+<div class="form-row"><label>Work email<input name="email" type="email" required></label></div>
+<div class="form-row"><label>Organisation<input name="organisation" type="text" required></label></div>
+<div class="form-row"><label>Role<input name="role" type="text" required></label></div>
+<div class="form-row"><label>Country or market<select name="market" required><option value="">Select one</option><option>Trinidad and Tobago</option><option>Guyana</option><option>Wider Caribbean</option><option>International-facing organisation</option><option>Other</option></select></label></div>
+<div class="form-row"><label>Primary reason<select name="primary_concern" required><option value="">Select one</option><option>AI governance / risk exposure</option><option>Board briefing</option><option>Policy and acceptable use</option><option>Documentation and evidence readiness</option><option>Market-access readiness</option><option>Ongoing governance support</option><option>Other</option></select></label></div>
+<div class="form-row"><label>Message<textarea name="message" rows="5"></textarea></label></div>
+<div class="form-row" style="position:absolute;left:-9999px"><label>Website<input name="website" type="text" tabindex="-1"></label></div>
+<div class="form-row"><label><input name="consent" type="checkbox" value="yes" required> I confirm this is an initial enquiry.</label></div>
+<button class="button button-dark" type="submit">Submit request</button>
+</form>
+</div>
+</div>
+</main>
+</body>
+</html>
