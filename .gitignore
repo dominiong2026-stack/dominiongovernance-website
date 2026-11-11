@@ -33,3 +33,32 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Dominion protected internal systems - NEVER publish to GitHub
+/PStar/
+/PSTAR/
+/COSMOS/
+/StemCellA/
+/StemCell/
+/STEMCELLA/
+/BuildCommander/
+/Build-Commander/
+/Sentinel/
+/R24*/
+/Dominion-Integrated-Command/
+/Council-Command/
+/control-plane/
+/system-architecture/
+/internal-architecture/
+/private-system/
+/private-docs/
+*.internal.*
+*.private.*
+*PSTAR*
+*PStar*
+*COSMOS*
+*StemCell*
+*STEMCELL*
+*BuildCommander*
+*Build-Commander*
+*R24*
